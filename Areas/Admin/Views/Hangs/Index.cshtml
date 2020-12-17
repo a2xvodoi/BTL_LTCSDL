@@ -1,0 +1,82 @@
+﻿@model PagedList.IPagedList<layout.Models.Hang>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+<div class="card-header">
+    <i class="fas fa-table mr-1"></i>
+    SẢN PHẨM
+
+    <span class="float-right">
+
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="Dropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sắp xếp theo</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="@Url.Action("Index","Hangs", new { order = "descname"})">Tên hàng giảm</a>
+                    <a class="dropdown-item" href="@Url.Action("Index","Hangs", new { order = "ascname"})">Tên hàng tăng</a>
+
+                </div>
+            </li>
+        </ul>
+    </span>
+</div>
+<p>
+    @Html.ActionLink("Thêm mới", "Create", "Hangs", new { @class = "btn btn-link", @role = "button" })
+</p>
+<table class="table table-bordered" width="100%" cellspacing="0">
+    <tr>
+        <th>
+            Mã hàng
+        </th>
+        <th>
+            Tên hàng
+        </th>
+        <th>
+            Ảnh chụp
+        </th>
+        <th>
+            Giá bán
+        </th>
+        <th>
+            Kích cỡ
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenH)
+            </td>
+            <td>
+                @{
+                    string imgPath = "~/wwwroot/IMAGES/" + item.AnhChup;
+                }
+                <img src="@Url.Content(imgPath)" alt="@item.TenH" class="img-thumbnail" style="height:150px" />
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KichCo)
+            </td>
+            <td>
+                @Html.ActionLink("Chi tiết", "Details", new { id = item.MaH }) <br /><hr />
+                @Html.ActionLink("Chỉnh sửa", "Edit", new { id = item.MaH }) <br /><hr />
+
+                @Html.ActionLink("Xóa", "Delete", new { id = item.MaH })
+            </td>
+        </tr>
+    }
+
+</table>
+Trang @(Model.PageCount<Model.PageNumber? 0:Model.PageNumber)/@Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, order = ViewBag.sort }))

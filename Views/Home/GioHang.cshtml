@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/_Layoutsub.cshtml";
+}
+<style>
+    .ctn{clear:both;position:relative;padding-left:10%;padding-top:5%;min-height:320px}
+    .c{float:left;width:45%;height:auto}
+    .c img{width:70%;height:150px}
+    .r{width:100%;height:auto;}
+    .cs{float:left;width:100%;height:auto}
+</style>
+<p class="left" style="margin-top:30px">
+    <a href="@Url.Action("Index","Home")">Trang chủ</a>
+    <span>|</span>
+    <span>Giỏ hàng</span>
+<p></p>
+<div class="cl">&nbsp;</div>
+<center>
+    <div><h1>Giỏ hàng của bạn</h1></div>
+    <div class="ctn">
+        <div class="c">
+            <div class="r">
+                <div class="c">
+                    <a href=""><img src="~/wwwroot/IMAGES/15018290134.jpg" alt="" /></a>
+                </div>
+                <div class="c">
+                    <a href=""><div class="r" style="font-weight: bold; font-size: 16x;position:relative;top:20px">Quần âu size/color</div></a>
+                    <div class="r">
+                        <a><span style="left:-80px;position:relative;top:80px;">Xóa</span></a>
+                        <span style="position:relative;top:80px;">Số lượng</span>
+                        <span style="position:relative;top:80px;float:right">750.000đ</span>
+                    </div>
+                </div>
+            </div>
+            <hr style="width:100%;margin:10px 0 10px 0" />
+        </div>
+        <div class="c" style="background-color: antiquewhite;">
+            <div style="font-size:16px;font-weight:bold;margin:20px 0">TÓM TẮT ĐƠN HÀNG</div>
+            <div style="text-align:left">
+                Chưa bao gồm phí vận chuyển:<br />
+                <b>Tổng tiền:<span style="float:right">750.000đ</span></b>
+                <div class="cl" style="margin:20px 0 20px 0"></div>
+                <hr style="width:100%"/>
+                <br />
+                <i>Bạn có thể nhập mã giảm giá ở trang thanh toán</i><br/>
+                <a href="@Url.Action("DatHang","Home")" ><input type="button" value="TIẾN HÀNH ĐẶT HÀNG"style="margin-top:20px"/></a><br/>
+                <a href="@Url.Action("List_products","Home")" ><input type="button" value="MUA THÊM SẢN PHẨM"style="margin-top:20px"/></a>
+            </div>
+        </div>
+    </div>
+</center>
+<div class="collection-index">
+    <h2 class="titleSPCL"><font>Sản phẩm cùng loại</font></h2>
+    <div class="products">
+        <div class="cl">&nbsp;</div>
+        <ul>
+            <li>
+                <a href="#"><img src="~/wwwroot/IMAGES/Capture2.PNG" alt="" /></a>
+                <div class="product-info">
+                    <div class="product-desc">
+
+                        <p>Áo sơ mo nam họa tiết cổ áo Hàn Quốc<br /></p>
+                        <strong class="price">395.000 vnd</strong>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#"><img src="~/wwwroot/IMAGES/Capture3.PNG" alt="" /></a>
+                <div class="product-info">
+
+                    <div class="product-desc">
+
+                        <p>Áo sơ mi nam thời trang tay dài Hàn Quốc<br /></p>
+                        <strong class="price">395.000 vnd</strong>
+                    </div>
+                </div>
+            </li>
+            <li class="last">
+                <a href="#"><img src="~/wwwroot/IMAGES/Capture4.PNG" alt="" /></a>
+                <div class="product-info">
+
+                    <div class="product-desc">
+
+                        <p>Áo sơ mi nam thuê cổ đen Hàn Quốc<br /></p>
+                        <strong class="price">395.000 vnd</strong>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="cl">&nbsp;</div>
+    </div>
+</div>

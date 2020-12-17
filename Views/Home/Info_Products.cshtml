@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "Info_Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="content">
+    <ul class="title-subcollection">
+        <li class="first"><h1 style="text-align:center;margin-bottom:50px;margin-top:50px">Chi tiết sản phẩm</h1></li>
+    </ul>
+    <div class="bx-detail-product">
+        <div class="detail-product ">
+            <div class="thumbnails w55 boxzing ">
+                <span class="zoomImg sp" style="position: relative; overflow: hidden;">
+                    <img class="normalzoom" src="~/wwwroot/IMAGES/33-05003890102  (set).jpg">
+                </span>
+            </div>
+            <div class="aboutsSp w45 boxzing">
+                <form id="paymentForm" action="#" method="post">
+                    <input type="hidden" name="id" value="6234">
+                    <h1 class="nameDt">ÁO SƠ MI NAM HỌA TIẾT THỜI TRANG CAO CẤP LR809-1 03008390118</h1>
+                    <div class="priceDt">
+                        <label class="variant-price">395,000 đ</label>
+                    </div>
+                    <div class="colorDt">
+                        <h3>Chọn màu yêu thích</h3>
+                        <ul>
+                            <li rel="color_2"><label><input checked="checked" type="radio" value="2" name="color"><span>Màu Xanh</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="sizeDt">
+                        <h3>Chọn size của bạn</h3>
+                        <ul>
+                            <li><label><input checked="checked" type="radio" name="size" value="15"><span>S</span></label></li>
+                            <li><label><input type="radio" name="size" value="16"><span>M</span></label></li>
+                            <li><label><input type="radio" name="size" value="17"><span>L</span></label></li>
+                            <li><label><input type="radio" name="size" value="18"><span>XL</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="countDt">
+                        <h3>Số lượng</h3>
+                        <div class="selector-wrapper-qty">
+                            <input name="quantity" type="text" min="1" value="1" class="qty" id="quantity-custom" size="3">
+                            <div class="plus-qty">
+                                <span>+</span>
+                            </div>
+                            <div class="minus-qty">
+                                <span>-</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="@Url.Action("DatHang","Home")"><button type="button" class="addnow">Đặt mua ngay</button></a>
+                </form>
+                <div class="note-product">
+                    + Mở cửa từ <b>8:30 - 22:30</b> (T2 đến CN)<br +="" giao="" hàng="" tận="" nơi="" trên="" toàn="" quốc="" -="" thanh="" toán="" khi="" nhận="" hàng<br ="">
+                    + Đổi trả hàng trong vòng 15 ngày.<br>
+                    + ĐIỆN THOẠI ĐẶT HÀNG: <b>0164 773 6087</b><br>
+                    Sản phẩm sẽ có mặt tại nhà bạn trong vòng 2 -7 ngày làm việc.<br>
+                    Đước cung cấp bởi ẤN TƯỢNG FASHION.
+                </div>
+            </div>
+        </div>
+
+        <div class="questions-product">
+            <h3>Mời bạn đánh giá hoặc đặt câu hỏi về ÁO SƠ MI NAM HỌA TIẾT THỜI TRANG CAO CẤP LR809-1 03008390118</h3>
+            <div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="#" data-numposts="5" data-width="100%" style="border: none; visibility: visible; width: 100%; height: 178px;" class=""></iframe></span></div>
+        </div>
+
+        <div class="collection-index">
+            <h2 class="titleSPCL"><font>Sản phẩm cùng loại</font></h2>
+            <div class="products">
+                <div class="cl">&nbsp;</div>
+                <ul>
+                    <li>
+                        <a href="#"><img src="~/wwwroot/IMAGES/Capture2.PNG" alt="" /></a>
+                        <div class="product-info">
+                            <div class="product-desc">
+
+                                <p>Áo sơ mo nam họa tiết cổ áo Hàn Quốc<br /></p>
+                                <strong class="price">395.000 vnd</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="~/wwwroot/IMAGES/Capture3.PNG" alt="" /></a>
+                        <div class="product-info">
+
+                            <div class="product-desc">
+
+                                <p>Áo sơ mi nam thời trang tay dài Hàn Quốc<br /></p>
+                                <strong class="price">395.000 vnd</strong>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="last">
+                        <a href="#"><img src="~/wwwroot/IMAGES/Capture4.PNG" alt="" /></a>
+                        <div class="product-info">
+
+                            <div class="product-desc">
+
+                                <p>Áo sơ mi nam thuê cổ đen Hàn Quốc<br /></p>
+                                <strong class="price">395.000 vnd</strong>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cl">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</div>
+

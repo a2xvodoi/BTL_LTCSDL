@@ -1,0 +1,81 @@
+﻿@model layout.Models.CTDonHang
+
+<div>
+    <h4 class="text-center text-danger">Chi tiết đơn hàng: @Html.DisplayFor(model => model.DonHang.MaDH)</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-lg-6">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DonHang.NguoiNhan)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.DonHang.NguoiNhan)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Hang.MaH)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Hang.MaH)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Hang.TenH)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Hang.TenH)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.SoLuong)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SoLuong)
+                    </dd>
+                </div>
+                <div class="col-lg-6">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DonHang.NgayDatHang)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.DonHang.NgayDatHang)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DonHang.DiaChiNhan)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.DonHang.DiaChiNhan)
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Hang.MauSac)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Hang.MauSac)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Hang.KichCo)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Hang.KichCo)
+                    </dd>
+                </div>
+            </div>
+        </div>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaH, idc = Model.MaDH }) 
+</p>
+

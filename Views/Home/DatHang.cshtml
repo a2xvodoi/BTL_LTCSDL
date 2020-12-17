@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "DatHang";
+    Layout = "~/Views/Shared/_Layoutsub.cshtml";
+}
+<p class="left" style="margin-top:30px">
+    <a href="@Url.Action("Index","Home")">Trang chủ</a>
+    <span>|</span>
+    <span>Đặt hàng</span>
+<p></p>
+<div class="cl">&nbsp;</div>
+<div class="slider-menu">
+    <div class="container">
+        <div class="collection-index">
+            <div class="content-ship">
+                <h1 class="txtshipCod">Đặt hàng</h1>
+                <ul class="shipCod">
+                    <form class="buyfast" method="post" onsubmit="return checkform(this)">
+                        <li class="login-user w50">
+                            <h2 class="infoUserBills">Thông tin khách hàng</h2>
+                            <ul>
+                                <li class="login-form w60">
+                                    <label>Tên đăng nhập</label>
+                                    <input class="login_email lb-error" type="text" name="username">
+                                    <label>Mật khẩu</label>
+                                    <input class="login_password" type="password" name="password">
+                                    <p></p>
+                                    <input type="submit" value="Đăng nhập" class="btn btn-login" name="login" id="btn-login-now">
+                                    <label class="ortxt">hoặc</label>
+                                    <a class="btn btn-nonelogin" href="http://antuongfashion.vn/mua-nhanh.html" title="Mua hàng nhanh không cần đăng nhập">Mua hàng nhanh</a>
+                                    <a class="likremember" href="">Quên mật khẩu?</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="txtbill w50" style="float:right!important;position:relative;top:-415px">
+                            <h2 class="infoUserBills">Đơn hàng <font>(1 sản phẩm)</font></h2>
+                            <div class="lstBills">
+                                <div class="list_item cart-item">1 x <a href="@Url.Action("Info_products","Home")">ÁO SƠ MI NAM HỌA TIẾT THỜI TRANG CAO CẤP LR809-1 03008390118</a><span class="price">395,000 đ</span><p class="variant-title">XXL / Đen</p></div>						<div class="total-checkout">Tổng cộng <span> 395,000 đ</span></div>
+                            </div>
+                        </li>
+                    </form>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
+

@@ -1,0 +1,88 @@
+﻿@model layout.Models.Hang
+
+@{
+    ViewBag.Title = "Xóa";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    var ImagePath = "~/wwwroot/IMAGES/" + Model.AnhChup;
+}
+
+<h2>Xóa</h2>
+
+<h3>Bạn có chắc xóa sản phẩm này?</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DanhMuc.TenDM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DanhMuc.TenDM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnhChup)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(ImagePath)" id="output" class="img-rounded" alt="Ảnh" width="180" height="200" /><br />
+            
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiaBan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaBan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KichCo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KichCo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MauSac)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MauSac)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SLBan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SLBan)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>
+@if (ViewBag.er != null)
+{
+    <div class="alert alert-danger">@ViewBag.er</div>
+}

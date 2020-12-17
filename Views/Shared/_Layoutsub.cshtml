@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>
+        Thời Trang Ấn Tượng - Shop quần áo nam hàn quốc đẹp 2017 tại HCM
+    </title>
+    <link rel="stylesheet" href="~/wwwroot/css/style.css" type="text/css" media="all" />
+    <!--[if lte IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+
+    <meta name="keywwords" content="Shop Around - Great free html template for on-line shop. Use it as a start point for your on line business. The template can be easily implemented in many open source E-commerce platforms" />
+    <meta name="description" content="Shop Around - Great free html template for on-line shop. Use it as a start point for your on line business. The template can be easily implemented in many open source E-commerce platforms" />
+
+    <!-- JS -->
+    <script src="~/wwwroot/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="~/wwwroot/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+    <script src="~/wwwroot/js/jquery-func.js" type="text/javascript"></script>
+    <!-- End JS -->
+    <link href="~/wwwroot/css/info_products.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Shell -->
+    <div class="shell">
+
+        <!-- Header -->
+        <div id="header">
+            <a href="@Url.Action("Index","Home")"><img src="~/wwwroot/IMAGES/Capture0.PNG" /></a>
+
+            <!-- Cart -->
+            <div id="cart">
+                <a href="@Url.Action("GioHang","Home")" class="cart-link">Giỏ hàng</a>
+                <div class="cl">&nbsp;</div>
+                <span>Đã xem: <strong>4</strong></span>
+                &nbsp;&nbsp;
+                <span>Giá: <strong>2.500.000đ</strong></span>
+            </div>
+            <!-- End Cart -->
+            <!-- Navigation -->
+            @{
+                Html.RenderPartial("_Navigation");
+            }
+            <!-- End Navigation -->
+        </div>
+        <!-- End Header -->
+        <!-- Main -->
+        <div id="main">
+            @RenderBody()
+        </div>
+        <!-- End Main -->
+        <!-- Side Full -->
+        <div class="cl">&nbsp;</div>
+        <!-- End Side Full -->
+        <!-- Footer -->
+        @{
+            Html.RenderPartial("_Footer");
+        }
+        <!-- End Footer -->
+
+    </div>
+    <!-- End Shell -->
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="content">
+
+    <!-- Content Slider -->
+    <div id="slider" class="box">
+        <div id="slider-holder">
+            <ul>
+                <li><a href="#"><img src="~/wwwroot/IMAGES/Capture1.PNG" alt="" style="width: 956px;height: 100%;" /></a></li>
+                <li><a href="#"><img src="~/wwwroot/IMAGES/39-05003890123  (set).jpg" alt="" style="width: 956px;height: 100%" /></a></li>
+
+            </ul>
+        </div>
+        <div id="slider-nav">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+
+        </div>
+    </div>
+    <!-- End Content Slider -->
+    <!-- Products -->
+    <div class="products">
+        <div class="cl">&nbsp;</div>
+        <ul>
+            <li>
+                <a href="@Url.Action("Info_Products","Home")"><img src="~/wwwroot/IMAGES/Capture2.PNG" alt="" /></a>
+                <div class="product-info">
+                    <div class="product-desc">
+
+                        <p>Áo sơ mo nam họa tiết cổ áo Hàn Quốc<br /></p>
+                        <strong class="price">395.000 vnd</strong>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="@Url.Action("Info_Products","Home")"><img src="~/wwwroot/IMAGES/Capture3.PNG" alt="" /></a>
+                <div class="product-info">
+
+                    <div class="product-desc">
+
+                        <p>Áo sơ mi nam thời trang tay dài Hàn Quốc<br /></p>
+                        <strong class="price">395.000 vnd</strong>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="@Url.Action("Info_Products","Home")"><img src="~/wwwroot/IMAGES/Capture3.PNG" alt="" /></a>
+                <div class="product-info">
+
+                    <div class="product-desc">
+
+                        <p>Áo sơ mi nam thời trang tay dài Hàn Quốc<br /></p>
+                        <strong class="price">395.000 vnd</strong>
+                    </div>
+                </div>
+            </li>
+            <li class="last">
+                <a href="@Url.Action("Info_Products","Home")"><img src="~/wwwroot/IMAGES/Capture4.PNG" alt="" /></a>
+                <div class="product-info">
+
+                    <div class="product-desc">
+
+                        <p>Áo sơ mi nam thuê cổ đen Hàn Quốc<br /></p>
+                        <strong class="price">395.000 vnd</strong>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="cl">&nbsp;</div>
+    </div>
+    <!-- End Products -->
+
+</div>

@@ -1,0 +1,3634 @@
+﻿a, a:hover {
+    text-decoration: none
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url(http://www.microsoft.com/surface/Assets/css/fonts/all/normal/segoeui.eot);
+    src: local("Segoe UI"),local("Segoe"),local("Segoe WP"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/normal/segoeui.eot?#iefix) format("embedded-opentype"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/normal/segoeui.woff) format("woff"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/normal/segoeui.svg#SegoeUI) format("svg");
+    src: url(font/segoeui.eot);
+    src: local("Segoe UI"),local("Segoe"),local("Segoe WP"),url(font/segoeui.eot?#iefix) format("embedded-opentype"),url(font/segoeui.woff) format("woff"),url(font/segoeui.svg#SegoeUI) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url(http://www.microsoft.com/surface/Assets/css/fonts/all/semibold/seguisb.eot);
+    src: local("Segoe Semibold"),local("Segoe WP Semibold"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/semibold/seguisb.eot?#iefix) format("embedded-opentype"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/semibold/seguisb.woff) format("woff"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/semibold/seguisb.svg#SegoeUISemibold) format("svg");
+    src: url(font/seguisb.eot);
+    src: local("Segoe Semibold"),local("Segoe WP Semibold"),url(font/seguisb.eot?#iefix) format("embedded-opentype"),url(font/seguisb.woff) format("woff"),url(font/seguisb.svg#SegoeUISemibold) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url(http://www.microsoft.com/surface/Assets/css/fonts/all/bold/segoeuib.eot);
+    src: local("Segoe Bold"),local("Segoe WP Bold"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/bold/segoeuib.eot?#iefix) format("eot"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/bold/segoeuib.woff) format("woff"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/bold/segoeuib.svg#SegoeUIBold) format("svg");
+    src: url(font/segoeuib.eot);
+    src: local("Segoe Bold"),local("Segoe WP Bold"),url(font/segoeuib.eot?#iefix) format("eot"),url(font/segoeuib.woff) format("woff"),url(font/segoeuib.svg#SegoeUIBold) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Segoe UI Light';
+    src: url(http://www.microsoft.com/surface/Assets/css/fonts/all/light/segoeuil.eot);
+    src: local("Segoe UI Light"),local("Segoe WP Light"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/light/segoeuil.eot?#iefix) format("embedded-opentype"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/light/segoeuil.woff) format("woff"),url(http://www.microsoft.com/surface/Assets/css/fonts/all/light/segoeuil.svg#SegoeUILight) format("svg");
+    src: url(font/segoeuil.eot);
+    src: local("Segoe UI Light"),local("Segoe WP Light"),url(font/segoeuil.eot?#iefix) format("embedded-opentype"),url(font/segoeuil.woff) format("woff"),url(font/segoeuil.svg#SegoeUILight) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(fonts/glyphicons-halflings-regular.eot);
+    src: url(fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"),url(fonts/glyphicons-halflings-regular.woff) format("woff"),url(fonts/glyphicons-halflings-regular.ttf) format("truetype"),url(fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font: 13px/17px Arial,"Segoe UI",Tahoma,Verdana;
+    margin: 0
+}
+
+a {
+    color: #000
+}
+
+    a:hover {
+        color: #c00
+    }
+
+#banner .page-head ul, #banner .topbar ul, #footer ul, .aboutdetail-product, .apearUL, .collection-index .title-subcollection, .content-ship ul, .detail-product, .detail-product ul, .lstproNew ul, .newsevent ul, .slider-menu, .slider-menu .w-menu ul, .tblHistoryOrder, .w-slide .fast-Nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%
+}
+
+    #banner .page-head *, #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li .buynow, #footer ul, #footer ul li, .aboutdetail-product, .boxzing, .buyfast .fright, .buyfast .ip, .bx-detail-product, .collection-index .title-subcollection, .collection-index .title-subcollection li, .container .btn, .content-ship .shipCod, .content-ship .shipCod li, .content-ship .shipCod li li.login-form .login_email, .content-ship .shipCod li li.login-form .login_password, .detail-product, .lstcollection li, .lstproNew ul li, .newsevent ul li, .registryfast .fright, .registryfast .ip, .slider-menu .bx-sizing, .slider-menu .w-menu ul, .tblHistoryOrder .column, .textarea, button, input[type=text], input[type=password], input[type=file], input[type=button], input[type=reset], select, textarea {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    #banner .page-head ul li .frmSearch, .radius-b3 {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px
+    }
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1150px
+}
+
+.material-menu-button {
+    display: none
+}
+
+.txthead {
+    font: 15px/17px Segoe UI Bold
+}
+
+#banner .topbar {
+    border-bottom: 1px solid #e4e4e4;
+    display: inline-block;
+    width: 100%;
+    padding: 3px 0 0
+}
+
+    #banner .topbar ul li {
+        float: left;
+        margin-top: 2px
+    }
+
+    #banner .topbar ul.nav-left {
+        float: left;
+        width: auto
+    }
+
+        #banner .topbar ul.nav-left .hotFone {
+            font: 700 17px/17px Arial;
+            color: #f75959
+        }
+
+    #banner .topbar ul.nav-right {
+        float: right;
+        width: auto
+    }
+
+        #banner .topbar ul.nav-right li {
+            float: right;
+            position: relative;
+            height: 23px
+        }
+
+            #banner .topbar ul.nav-right li a {
+                color: #444;
+                margin-bottom: 3px;
+                border-right: 1px solid #777;
+                padding: 0 10px
+            }
+
+                #banner .topbar ul.nav-right li a:focus, #banner .topbar ul.nav-right li a:hover {
+                    color: #e73b3b
+                }
+
+            #banner .topbar ul.nav-right li .fastHover {
+                z-index: 100
+            }
+
+            #banner .topbar ul.nav-right li.login a {
+                border: none;
+                padding-right: 0
+            }
+
+            #banner .topbar ul.nav-right li.login .loginform {
+                height: 0;
+                visibility: hidden;
+                opacity: 0;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                -o-transition: all .2s;
+                transition: all .2s;
+                background: #fff;
+                padding: 15px;
+                position: absolute;
+                top: 100px;
+                width: 250px;
+                z-index: 5;
+                right: 0;
+                border: solid #e4e4e4;
+                border-width: 0 1px 1px
+            }
+
+                #banner .topbar ul.nav-right li.login .loginform.open, #banner .topbar ul.nav-right li.login.open .loginform, #banner .topbar ul.nav-right li.login:focus .loginform, #banner .topbar ul.nav-right li.login:hover .loginform {
+                    height: auto;
+                    visibility: visible;
+                    top: 25px;
+                    opacity: 1
+                }
+
+            #banner .topbar ul.nav-right li.login.logined {
+                padding-left: 10px;
+                color: #555
+            }
+
+                #banner .topbar ul.nav-right li.login.logined font {
+                    font-weight: 700;
+                    color: #222
+                }
+
+                #banner .topbar ul.nav-right li.login.logined a {
+                    color: #d00;
+                    padding-right: 0;
+                    border: none
+                }
+
+            #banner .topbar ul.nav-right li.registry .registryform {
+                height: 0;
+                visibility: hidden;
+                opacity: 0;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                -o-transition: all .2s;
+                transition: all .2s;
+                background: #fff;
+                padding: 15px;
+                position: absolute;
+                top: 100px;
+                width: 500px;
+                z-index: 5;
+                right: -70px;
+                border: solid #e4e4e4;
+                border-width: 0 1px 1px
+            }
+
+            #banner .topbar ul.nav-right li.registry.open .registryform, #banner .topbar ul.nav-right li.registry:focus .registryform, #banner .topbar ul.nav-right li.registry:hover .registryform {
+                height: auto;
+                visibility: visible;
+                top: 23px;
+                opacity: 1
+            }
+
+#banner .page-head {
+    height: 75px;
+    position: relative
+}
+
+    #banner .page-head .likHome, #banner .page-head .likShipwhere {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 75px;
+        z-index: 2;
+        cursor: pointer
+    }
+
+    #banner .page-head .likShipwhere {
+        right: 0;
+        left: auto
+    }
+
+    #banner .page-head ul {
+        padding: 0;
+        height: 100%
+    }
+
+        #banner .page-head ul li {
+            float: left
+        }
+
+            #banner .page-head ul li .frmSearch {
+                background: #e73b3b;
+                padding: 2px;
+                width: 100%;
+                height: 36px;
+                margin-top: 20px
+            }
+
+                #banner .page-head ul li .frmSearch .search-field {
+                    width: 85%;
+                    height: 32px;
+                    float: left;
+                    border: none
+                }
+
+                #banner .page-head ul li .frmSearch .search-btn {
+                    width: 15%;
+                    height: 32px;
+                    border: none;
+                    background: 0 0;
+                    float: left;
+                    text-transform: uppercase;
+                    text-align: center
+                }
+
+            #banner .page-head ul li.logo-custom {
+                padding-top: 10px
+            }
+
+            #banner .page-head ul li.CartsBills .rightCarts li {
+                float: right;
+                position: relative
+            }
+
+                #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                    background: url(../images/icon-cart.jpg) left center no-repeat;
+                    display: inline-block;
+                    padding: 30px 0 30px 40px
+                }
+
+                    #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart font {
+                        font-weight: 700;
+                        color: #d00
+                    }
+
+                #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform {
+                    height: 0;
+                    visibility: hidden;
+                    opacity: 0;
+                    -webkit-transition: all .2s;
+                    -moz-transition: all .2s;
+                    -o-transition: all .2s;
+                    transition: all .2s;
+                    background: #fff;
+                    padding: 15px;
+                    position: absolute;
+                    top: 100px;
+                    width: 500px;
+                    z-index: 5;
+                    right: 0;
+                    border: 1px solid #e4e4e4
+                }
+
+                    #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li {
+                        height: auto;
+                        position: relative;
+                        padding: 5px 0;
+                        border-bottom: 1px solid #eee;
+                        margin: 0;
+                        width: 100%
+                    }
+
+                        #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li img {
+                            width: 50px;
+                            height: 60px;
+                            float: left;
+                            margin-right: 10px
+                        }
+
+                        #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li .price, #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li.count-price label {
+                            float: right
+                        }
+
+                        #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li .variant-title {
+                            margin: 0
+                        }
+
+                        #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li .bt-close {
+                            display: inline-block;
+                            color: #fff;
+                            background-color: #f05f5c;
+                            line-height: 20px;
+                            width: 20px;
+                            height: 20px;
+                            -webkit-border-radius: 100%;
+                            -moz-border-radius: 100%;
+                            -ms-border-radius: 100%;
+                            -o-border-radius: 100%;
+                            border-radius: 100%;
+                            text-align: center;
+                            font-size: 11px;
+                            cursor: pointer;
+                            float: right
+                        }
+
+                        #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li.count-price {
+                            font: 700 14px Arial;
+                            border: none
+                        }
+
+.markermenu ul li, .slider-menu .bx-sizing, .w-slide .fast-Nav ul li {
+    float: left
+}
+
+#banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li:last-child {
+    border: none
+}
+
+#banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li .buynow {
+    padding: 11px;
+    text-transform: uppercase;
+    font: 16px Segoe UI Semibold;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #e82d2d;
+    border: 1px solid #e82d2d;
+    color: #fff
+}
+
+    #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li .buynow:focus, #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform li .buynow:hover {
+        border-color: #cf1010;
+        background: #cf1010;
+        color: #fff
+    }
+
+#banner .page-head ul li.CartsBills .rightCarts li.bx-cart:hover .cartform {
+    height: auto;
+    visibility: visible;
+    top: 60px;
+    opacity: 1
+}
+
+#banner .page-head ul li.CartsBills .rightCarts li.bx-Bill {
+    margin-right: 20px
+}
+
+    #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill .lik-bill {
+        background: url(../images/icon-bills.jpg) left center no-repeat;
+        display: inline-block;
+        padding: 30px 0 30px 40px
+    }
+
+        #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill .lik-bill font {
+            font-weight: 700;
+            color: #d00
+        }
+
+    #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill .billform {
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+        background: #fff;
+        padding: 15px;
+        position: absolute;
+        top: 100px;
+        width: 250px;
+        z-index: 5;
+        right: -100px;
+        border: 1px solid #e4e4e4
+    }
+
+    #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill:hover .billform {
+        height: auto;
+        visibility: visible;
+        top: 60px;
+        opacity: 1
+    }
+
+#top, .pagination a.disabled {
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
+
+.slider-menu .w-menu {
+    height: 376px;
+    overflow: hidden;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+    z-index: 999999999
+}
+
+    .slider-menu .w-menu .titleCate {
+        text-transform: uppercase;
+        font: 17px/19px Segoe UI Semibold;
+        margin: 0;
+        padding: 8px;
+        height: 19px
+    }
+
+    .slider-menu .w-menu ul {
+        background: #fff;
+        border: 1px solid #e4e4e4
+    }
+
+        .slider-menu .w-menu ul li {
+            background: url(../images/arrow-01.jpg) 95% 15px no-repeat;
+            position: relative
+        }
+
+            .slider-menu .w-menu ul li a {
+                color: #444;
+                font: 14px/19px Segoe UI Semibold;
+                display: block;
+                padding: 9px 20px;
+                border-top: 1px solid #e4e4e4;
+                text-transform: uppercase
+            }
+
+                .slider-menu .w-menu ul li a:focus, .slider-menu .w-menu ul li a:hover {
+                    color: #e73b3b
+                }
+
+            .slider-menu .w-menu ul li .sub-menu {
+                position: absolute;
+                left: 75%;
+                top: 0;
+                background: #fff;
+                width: 300px;
+                visibility: hidden;
+                border: 1px solid;
+                border-color: #e4e4e4 #e4e4e4 #e4e4e4 #E73B3B
+            }
+
+                .slider-menu .w-menu ul li .sub-menu li {
+                    background: 0 0;
+                    border: none
+                }
+
+            .slider-menu .w-menu ul li.current, .slider-menu .w-menu ul li:focus, .slider-menu .w-menu ul li:hover {
+                background: url(../images/arrow-01-hv.jpg) 95% 15px no-repeat
+            }
+
+            .slider-menu .w-menu ul li .sub-menu li a {
+                text-transform: none;
+                padding: 9px 10px;
+                font: 14px/19px Segoe UI;
+                border: none;
+                color: #555
+            }
+
+                .slider-menu .w-menu ul li .sub-menu li a:focus, .slider-menu .w-menu ul li .sub-menu li a:hover {
+                    color: #e73b3b
+                }
+
+            .slider-menu .w-menu ul li.current .sub-menu, .slider-menu .w-menu ul li:focus .sub-menu, .slider-menu .w-menu ul li:hover .sub-menu {
+                visibility: visible;
+                left: 100%;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -o-transition: all .5s;
+                transition: all .5s;
+                z-index: 9999999
+            }
+
+            .slider-menu .w-menu ul li.current a {
+                color: #E73B3B
+            }
+
+            .slider-menu .w-menu ul li.current li a {
+                color: #444
+            }
+
+                .slider-menu .w-menu ul li.current li a:focus, .slider-menu .w-menu ul li.current li a:hover {
+                    color: #e73b3b
+                }
+
+    .slider-menu .w-menu:hover {
+        overflow: inherit
+    }
+
+.w-slide {
+    height: 375px
+}
+
+    .w-slide .fast-Nav {
+        height: 36px
+    }
+
+        .w-slide .fast-Nav ul {
+            position: relative
+        }
+
+            .w-slide .fast-Nav ul li a {
+                color: #333;
+                font: 14px/19px Segoe UI;
+                display: block;
+                text-transform: uppercase;
+                padding: 8px 20px
+            }
+
+                .w-slide .fast-Nav ul li a:focus, .w-slide .fast-Nav ul li a:hover {
+                    color: #e73b3b
+                }
+
+    .w-slide .wp-slide {
+        height: 340px;
+        width: 100%;
+        overflow: hidden;
+        position: relative
+    }
+
+        .w-slide .wp-slide.skippr div {
+            width: 100%;
+            height: 100%;
+            overflow: hidden
+        }
+
+.markermenu {
+    display: inline-block;
+    background: #eee;
+    width: 100%;
+    padding-bottom: 10px
+}
+
+    .markermenu ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px 0 0 20px;
+        border-top: 1px solid #E73B3B
+    }
+
+        .markermenu ul li {
+            width: 33%
+        }
+
+            .markermenu ul li a {
+                background: url(../images/arrow-01.jpg) 0 15px no-repeat;
+                padding: 8px 0 8px 15px;
+                font: 14px/19px Segoe UI Semibold;
+                display: block
+            }
+
+                .markermenu ul li a:focus, .markermenu ul li a:hover, .markermenu ul li.current a {
+                    background: url(../images/arrow-01-hv.jpg) 0 15px no-repeat;
+                    color: #E73B3B
+                }
+
+            .markermenu ul li.current a {
+                font: 16px/19px Segoe UI Bold
+            }
+
+.right_mh {
+    padding: 30px 0 0 20px;
+    display: inline-block
+}
+
+    .right_mh .nav_name_box h1 {
+        margin: 0 0 20px;
+        font: 24px Segoe UI Semibold;
+        text-transform: uppercase
+    }
+
+.collection-index {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px
+}
+
+    .collection-index .title-subcollection {
+        border: 1px solid;
+        border-color: #23303f #e4e4e4 #e4e4e4;
+        overflow: hidden;
+        height: 40px
+    }
+
+        .collection-index .title-subcollection li {
+            background: url(../images/icStep.png) 5px center no-repeat;
+            padding: 10px 0 10px 35px;
+            color: #444;
+            font: 14px Segoe UI;
+            height: 39px;
+            float: left
+        }
+
+            .collection-index .title-subcollection li a {
+                color: #444;
+                font: 15px/17px Segoe UI
+            }
+
+                .collection-index .title-subcollection li a:focus, .collection-index .title-subcollection li a:hover {
+                    color: #E73B3B
+                }
+
+            .collection-index .title-subcollection li.first {
+                font: 19px/17px Segoe UI Semibold;
+                color: #23303f;
+                text-transform: uppercase;
+                background: 0 0;
+                padding-left: 15px
+            }
+
+            .collection-index .title-subcollection li.last {
+                float: right;
+                background: url(../images/icMore.png) right center no-repeat;
+                padding-right: 40px;
+                margin-right: 10px
+            }
+
+                .collection-index .title-subcollection li.last a {
+                    color: #444;
+                    font: 17px/17px Segoe UI Semibold
+                }
+
+                    .collection-index .title-subcollection li.last a:focus, .collection-index .title-subcollection li.last a:hover {
+                        color: #E73B3B
+                    }
+
+.lstcollection {
+    margin-left: -20px;
+    margin-right: -20px;
+    list-style: none;
+    display: block;
+    padding: 0
+}
+
+    .lstcollection li {
+        float: left;
+        width: 25%;
+        padding: 5px 20px
+    }
+
+        .lstcollection li .img-thumb {
+            position: relative;
+            height: 450px;
+            overflow: hidden
+        }
+
+            .lstcollection li .img-thumb a.img-thb {
+                height: 336px;
+                overflow: hidden;
+                width: 100%;
+                display: block;
+                text-align: center
+            }
+
+                .lstcollection li .img-thumb a.img-thb img {
+                    height: 100%
+                }
+
+            .lstcollection li .img-thumb .intro {
+                font: 15px/17px Segoe UI;
+                color: #555;
+                margin: 10px 0 5px;
+                text-align: center
+            }
+
+            .lstcollection li .img-thumb .new-rating span {
+                color: #F13C3C;
+                font: 21px/25px Segoe UI SemiBold;
+                display: block;
+                padding-bottom: 5px
+            }
+
+            .lstcollection li .img-thumb .old-count {
+                text-align: right
+            }
+
+                .lstcollection li .img-thumb .old-count del {
+                    color: #777;
+                    font: 18px/25px Segoe UI;
+                    display: block
+                }
+
+                .lstcollection li .img-thumb .old-count .rcounter {
+                    display: block;
+                    font-size: 12px;
+                    padding-top: 5px
+                }
+
+            .lstcollection li .img-thumb .btn-addCarts {
+                background: url(../images/icCart.png) 10px center no-repeat #f24343;
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+                box-shadow: 0 1px 3px rgba(0,0,0,.3);
+                color: #fff;
+                font: 15px/20px Segoe UI Semibold;
+                padding: 10px 0;
+                width: 70%;
+                left: 0;
+                top: 140px;
+                visibility: hidden;
+                z-index: 999;
+                position: absolute;
+                text-align: center
+            }
+
+            .lstcollection li .img-thumb:focus .btn-addCarts, .lstcollection li .img-thumb:hover .btn-addCarts {
+                left: 15%;
+                visibility: visible;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                -o-transition: all .2s;
+                transition: all .2s
+            }
+
+                .lstcollection li .img-thumb:focus .btn-addCarts:focus, .lstcollection li .img-thumb:focus .btn-addCarts:hover, .lstcollection li .img-thumb:hover .btn-addCarts:focus, .lstcollection li .img-thumb:hover .btn-addCarts:hover {
+                    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+                    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+                    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+                    padding: 12px 0;
+                    background-color: #e53737
+                }
+
+.lstproNew {
+    margin: 20px 0
+}
+
+    .lstproNew ul h2, .lstproNew ul h6 {
+        text-transform: uppercase;
+        color: #444;
+        font: 18px/20px Segoe UI Semibold;
+        margin: 0;
+        padding: 10px;
+        background: #eee
+    }
+
+    .lstproNew ul li {
+        float: left;
+        width: 100%;
+        padding: 10px;
+        border-top: 1px solid #e4e4e4;
+        background: 0 0 !important
+    }
+
+        .lstproNew ul li a.img-thb {
+            display: block;
+            float: left;
+            overflow: hidden;
+            background-position: center top;
+            width: 40%;
+            height: 130px;
+            padding: 0;
+            border: none;
+            margin-right: 10px
+        }
+
+            .lstproNew ul li a.img-thb img {
+                height: 130px;
+                min-width: 100%;
+                margin: -2px 0 0 -2px
+            }
+
+        .lstproNew ul li .intro {
+            font: 15px/17px Segoe UI;
+            color: #555;
+            margin: 0 0 10px;
+            text-align: left;
+            padding: 0;
+            text-transform: none;
+            background: 0 0
+        }
+
+        .lstproNew ul li del {
+            color: #999;
+            font: 14px/20px Segoe UI;
+            display: block
+        }
+
+        .lstproNew ul li .price-news {
+            color: #ec5053;
+            font: 18px/25px Segoe UI SemiBold;
+            display: block;
+            padding-bottom: 5px
+        }
+
+        .lstproNew ul li .rating-5 {
+            width: 56%;
+            margin-left: 44%
+        }
+
+.rating-5 {
+    background: url(../images/rating_5.jpg) left center no-repeat;
+    height: 8px;
+    width: 100%;
+    display: block
+}
+
+.tblContacts {
+    padding: 20px 0 0 20px;
+    font-size: 14px
+}
+
+
+.pages .slider-menu .w-slide {
+    height: auto
+}
+
+.pages .slider-menu .w-menu {
+    height: auto;
+    border-bottom: none
+}
+
+    .pages .slider-menu .w-menu ul li a {
+        line-height: 20px
+    }
+
+    .pages .slider-menu .w-menu ul li .sub-menu {
+        position: relative;
+        left: 0;
+        top: 0;
+        background: 0 0;
+        height: auto;
+        width: 100%;
+        visibility: visible;
+        border: none;
+        display: none
+    }
+
+        .pages .slider-menu .w-menu ul li .sub-menu li a {
+            padding-left: 35px;
+            border-top: 1px solid #e9e9e9
+        }
+
+    .pages .slider-menu .w-menu ul li:focus .sub-menu, .pages .slider-menu .w-menu ul li:hover .sub-menu {
+        visibility: hidden;
+        left: 0;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none
+    }
+
+    .pages .slider-menu .w-menu ul li.current .sub-menu {
+        visibility: visible;
+        left: 0;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none;
+        display: block
+    }
+
+.pagination, .pagination a {
+    display: inline-block;
+    text-align: center
+}
+
+.pages .slider-menu .w-menu ul li.current .sub-menu li a:focus, .pages .slider-menu .w-menu ul li.current .sub-menu li a:hover {
+    color: #E73B3B
+}
+
+.pages .collection-index {
+    margin-top: 0
+}
+
+    .pages .collection-index .title-subcollection {
+        border-width: 1px 1px 1px 0;
+        border-top-color: #E73B3B;
+        background: #fbfbfb
+    }
+
+    .pages .collection-index .lstcollection {
+        padding-left: 20px
+    }
+
+        .pages .collection-index .lstcollection li {
+            width: 33.33333333333333%
+        }
+
+.pagination {
+    width: 100%;
+    margin: 30px 0
+}
+
+    .pagination li {
+        padding: 0 !important;
+        min-height: 20px !important;
+        width: auto !important
+    }
+
+    .pagination a {
+        margin-left: 3px;
+        padding: 6px 5px;
+        width: 18px;
+        border: 1px solid #e4e4e4;
+        background: #fff;
+        color: #777;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px
+    }
+
+        .pagination a:focus, .pagination a:hover {
+            border-color: #d4d4d4;
+            color: #000
+        }
+
+        .pagination a.first, .pagination a.last {
+            width: 50px
+        }
+
+        .pagination a.active, .pagination a.active:hover {
+            color: #fff;
+            background: #e73b3b;
+            border-color: #e73b3b
+        }
+
+
+.thong-bao {
+    padding: 10px 20px;
+    font: 15px/25px Segoe UI;
+    color: #777
+}
+
+
+
+.zoomImg {
+    display: inline-block;
+    position: relative;
+    border: none !important
+}
+
+    .zoomImg img {
+        display: block
+    }
+
+        .zoomImg img::selection {
+            background-color: transparent
+        }
+
+
+.bx-detail-product {
+    display: inline-block;
+    width: 100%
+}
+
+.detail-product ul {
+    border: none
+}
+
+    .detail-product ul input[type=radio] {
+        display: none
+    }
+
+    .detail-product ul span {
+        display: block;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        padding: 0 8px;
+        cursor: pointer;
+        background: #fff
+    }
+
+    .detail-product ul img {
+        margin-right: 3px;
+        vertical-align: middle
+    }
+
+    .detail-product ul input[type=radio]:checked + span {
+        border: 1px solid #e42127;
+        background: url(../images/bg-product.png) right bottom no-repeat #fff
+    }
+
+.detail-product .aboutsSp, .detail-product .thumbnails {
+    float: left;
+    padding: 15px
+}
+
+    .detail-product .aboutsSp .colorDt ul li span, .detail-product .aboutsSp .sizeDt li span {
+        padding: 5px 8px
+    }
+
+    .detail-product .aboutsSp * {
+        font-weight: 400
+    }
+
+    .detail-product .aboutsSp .nameDt {
+        font: 18px/22px Arial;
+        color: #333;
+        margin: 0 0 10px
+    }
+
+    .detail-product .aboutsSp .priceDt .variant-price {
+        font: 30px/40px Segoe UI;
+        color: #e32124
+    }
+
+    .detail-product .aboutsSp .priceDt .variant-compare-price {
+        margin-left: 30px
+    }
+
+    .detail-product .aboutsSp .priceDt .variant-coupon {
+        margin-left: 30px;
+        font-weight: 400
+    }
+
+    .detail-product .aboutsSp .colorDt ul li, .detail-product .aboutsSp .sizeDt li {
+        margin: 0 5px 5px 0;
+        float: left
+    }
+
+    .detail-product .aboutsSp .selector-wrapper-qty {
+        display: inline-block;
+        position: relative
+    }
+
+        .detail-product .aboutsSp .selector-wrapper-qty #quantity-custom {
+            height: 37px;
+            width: 55px;
+            border: 1px solid #d7d7d7;
+            text-indent: 15px
+        }
+
+        .detail-product .aboutsSp .selector-wrapper-qty .minus-qty, .detail-product .aboutsSp .selector-wrapper-qty .plus-qty {
+            position: absolute;
+            right: 1px;
+            width: 17px;
+            background-color: #f1f1f1;
+            border-left: 1px solid #d7d7d7;
+            display: table;
+            text-align: center;
+            cursor: pointer
+        }
+
+        .detail-product .aboutsSp .selector-wrapper-qty .plus-qty {
+            top: 1px;
+            border-bottom: 1px solid #d7d7d7
+        }
+
+        .detail-product .aboutsSp .selector-wrapper-qty .minus-qty {
+            bottom: 1px;
+            height: 10px;
+            vertical-align: middle
+        }
+
+    .detail-product .aboutsSp button.addnow {
+        display: block;
+        width: 80%;
+        padding: 15px 0;
+        text-align: center;
+        color: #fff;
+        font: 17px/20px Segoe UI Semibold;
+        background: #e82d2d;
+        text-transform: uppercase;
+        margin: 15px 0
+    }
+
+        .detail-product .aboutsSp button.addnow:focus, .detail-product .aboutsSp button.addnow:hover {
+            background: #cf1010
+        }
+
+    .detail-product .aboutsSp .note-product {
+        border: 1px dashed #ccc;
+        padding: 10px;
+        color: #555
+    }
+
+.aboutdetail-product .titleTab {
+    height: 38px;
+    border-bottom: 1px solid #e4e4e4
+}
+
+    .aboutdetail-product .titleTab font {
+        text-transform: uppercase;
+        font: 17px/20px Segoe UI Semibold;
+        height: 17px;
+        background: #fff;
+        padding: 10px 20px;
+        border-right: 1px solid #e4e4e4;
+        border-top: 2px solid #e82d2d;
+        display: inline-block
+    }
+
+.aboutdetail-product .txtcontent-product {
+    padding: 15px;
+    font: 14px/20px Arial !important;
+    text-align: center
+}
+
+    .aboutdetail-product .txtcontent-product div, .aboutdetail-product .txtcontent-product p, .aboutdetail-product .txtcontent-product span {
+        font: 14px/20px Arial !important
+    }
+
+    .aboutdetail-product .txtcontent-product img {
+        max-width: 100% !important;
+        height: auto !important;
+        margin-top: 20px
+    }
+
+.questions-product {
+    padding: 15px;
+    border-top: 1px solid #e4e4e4
+}
+
+    .questions-product h3 {
+        font: 20px/22px Arial
+    }
+
+.titleSPCL {
+    height: 38px;
+    border-bottom: 1px solid #e4e4e4
+}
+
+    .titleSPCL font {
+        text-transform: uppercase;
+        font: 17px/20px Segoe UI Semibold;
+        height: 18px;
+        background: #fff;
+        padding: 10px 20px;
+        border-bottom: 1px solid #e82d2d;
+        display: inline-block;
+        color: #e82d2d
+    }
+
+.textarea, button, input[type=text], input[type=password], input[type=file], input[type=submit], input[type=button], input[type=reset], select, textarea {
+    background: #fff;
+    font: 13px/17px Segoe UI,Arial;
+    border: 1px solid #DEDEDE;
+    padding: 8px;
+    width: 100%
+}
+
+    .textarea:focus, .textarea:hover, button:focus, button:hover, input[type=text]:focus, input[type=text]:hover, input[type=password]:focus, input[type=password]:hover, input[type=file]:focus, input[type=file]:hover, input[type=submit]:focus, input[type=submit]:hover, input[type=button]:focus, input[type=button]:hover, input[type=reset]:focus, input[type=reset]:hover, select:focus, select:hover, textarea:focus, textarea:hover {
+        background: #fff;
+        outline: 0;
+        border: 1px solid #64A4FF
+    }
+
+select {
+    padding: 5px
+}
+
+input[type=image] {
+    background: 0 0;
+    border: none;
+    padding: 0
+}
+
+button, input[type=submit], input[type=button], input[type=reset] {
+    background: #1987E5;
+    border: none;
+    color: #fff;
+    font: 14px/17px Segoe UI Semibold,Arial;
+    cursor: pointer;
+    padding: 8px 15px;
+    width: auto
+}
+
+    button:focus, button:hover, input[type=submit]:focus, input[type=submit]:hover, input[type=button]:focus, input[type=button]:hover, input[type=reset]:focus, input[type=reset]:hover {
+        background: #CE2112;
+        color: #FFF;
+        border: none;
+        outline: 0
+    }
+
+.lst-cate {
+    background: #fff;
+    border-left: 1px solid #e4e4e4
+}
+
+    .lst-cate ul {
+        border: none
+    }
+
+    .content-ship .shipCod li li.login-form, .lst-cate li {
+        border-right: 1px solid #e4e4e4
+    }
+
+    .lst-cate li {
+        width: 25%;
+        border-bottom: 1px solid #e4e4e4
+    }
+
+        .lst-cate li a {
+            display: block;
+            height: 274px;
+            overflow: hidden;
+            padding: 15px 10px 10px
+        }
+
+.txtshipCod {
+    margin: 0;
+    background: #666;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font: 20px/20px Segoe UI Semibold
+}
+
+.content-ship {
+    margin: -1px 0 50px
+}
+
+    .content-ship .shipCod {
+        border: 1px solid #e4e4e4;
+        border-top: none;
+        font: 14px Segoe UI
+    }
+
+        .content-ship .shipCod li {
+            float: left;
+            padding: 20px
+        }
+
+            .content-ship .shipCod li .lstBills .cart-item .price, .content-ship .shipCod li .lstBills .total-price label {
+                float: right
+            }
+
+            .content-ship .shipCod li .infoUserBills {
+                font: 20px Segoe UI Semibold;
+                margin: 0 0 20px;
+                text-transform: uppercase
+            }
+
+                .content-ship .shipCod li .infoUserBills font {
+                    font-size: 14px;
+                    text-transform: none
+                }
+
+            .content-ship .shipCod li li {
+                padding: 0 20px
+            }
+
+                .content-ship .shipCod li li.login-form .login_email, .content-ship .shipCod li li.login-form .login_password {
+                    padding: 11px;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    -o-border-radius: 2px;
+                    border-radius: 2px;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    margin-top: 5px
+                }
+
+                .content-ship .shipCod li li.login-form .ortxt {
+                    display: block;
+                    text-align: center;
+                    margin: 0 0 10px
+                }
+
+                .content-ship .shipCod li li.login-form.rememberpass {
+                    border: none
+                }
+
+            .content-ship .shipCod li .lstBills {
+                border: 1px dashed #B9B9B9;
+                padding: 10px
+            }
+
+                .content-ship .shipCod li .lstBills .cart-item {
+                    padding: 10px 0;
+                    border-bottom: 1px solid #e5e5e5
+                }
+
+                    .content-ship .shipCod li .lstBills .cart-item .variant-title {
+                        margin: 0;
+                        padding-left: 20px
+                    }
+
+                .content-ship .shipCod li .lstBills .total-price {
+                    padding: 10px 0;
+                    font: 17px Segoe UI Semibold
+                }
+
+                .content-ship .shipCod li .lstBills .use-coupon {
+                    margin: 10px 0;
+                    display: none
+                }
+
+                    .content-ship .shipCod li .lstBills .use-coupon .couponcode {
+                        width: 50%;
+                        padding: 11px;
+                        border: 1px solid #e4e4e4;
+                        float: left;
+                        margin-right: 2px
+                    }
+
+                        .content-ship .shipCod li .lstBills .use-coupon .couponcode:focus, .content-ship .shipCod li .lstBills .use-coupon .couponcode:hover {
+                            outline: 0
+                        }
+
+                    .content-ship .shipCod li .lstBills .use-coupon .btn-coupon {
+                        width: auto;
+                        background: #1886D6;
+                        border: 1px solid #1886D6;
+                        color: #fff;
+                        display: inline-block;
+                        padding: 8px
+                    }
+
+                        .content-ship .shipCod li .lstBills .use-coupon .btn-coupon:focus, .content-ship .shipCod li .lstBills .use-coupon .btn-coupon:hover {
+                            border-color: #0C72BD;
+                            background: #0C72BD;
+                            color: #fff
+                        }
+
+                    .content-ship .shipCod li .lstBills .use-coupon .btn-cancel-coupon {
+                        width: auto;
+                        background: #f5f5f5;
+                        border: 1px solid #d4d4d4;
+                        color: #444;
+                        display: inline-block;
+                        padding: 8px
+                    }
+
+                        .content-ship .shipCod li .lstBills .use-coupon .btn-cancel-coupon:focus, .content-ship .shipCod li .lstBills .use-coupon .btn-cancel-coupon:hover {
+                            border-color: #c4c4c4;
+                            background: #f3f3f3;
+                            color: #111
+                        }
+
+                .content-ship .shipCod li .lstBills .total-checkout {
+                    font: 20px/40px Segoe UI Bold;
+                    margin: 10px 0 30px;
+                    text-transform: uppercase
+                }
+
+                    .content-ship .shipCod li .lstBills .total-checkout span {
+                        float: right
+                    }
+
+                .content-ship .shipCod li .lstBills .btn-checkout {
+                    background: #cc2626;
+                    border: 1px solid #cc2626;
+                    color: #fff
+                }
+
+.buyfast .ip, .container .btn {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px
+}
+
+.content-ship .shipCod li .lstBills .btn-checkout:focus, .content-ship .shipCod li .lstBills .btn-checkout:hover {
+    border-color: #bd1313;
+    background: #bd1313;
+    color: #fff
+}
+
+.container .btn {
+    padding: 11px;
+    text-transform: uppercase;
+    font: 16px Segoe UI Semibold;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #d4d4d4;
+    color: #444
+}
+
+    .container .btn.btn-facebook, .container .btn.btn-google, .container .btn.btn-yahoo {
+        text-transform: none;
+        padding: 6px 10px;
+        font: 14px Segoe UI
+    }
+
+    .container .btn:focus, .container .btn:hover {
+        border-color: #c4c4c4;
+        background: #f3f3f3;
+        color: #111;
+        cursor: pointer
+    }
+
+    .container .btn.btn-login {
+        background: #31b47e;
+        border: 1px solid #31b47e;
+        color: #fff;
+        margin-top: 10px
+    }
+
+        .container .btn.btn-login:focus, .container .btn.btn-login:hover {
+            border-color: #0F8A57;
+            background: #0F8A57;
+            color: #fff
+        }
+
+    .container .btn.btn-createuser {
+        background: #f5f5f5;
+        border: 1px solid #d4d4d4;
+        color: #444
+    }
+
+        .container .btn.btn-createuser:focus, .container .btn.btn-createuser:hover {
+            border-color: #c4c4c4;
+            background: #f3f3f3;
+            color: #111
+        }
+
+    .container .btn.btn-nonelogin {
+        background: #f48635;
+        border: 1px solid #f48635;
+        color: #fff
+    }
+
+        .container .btn.btn-nonelogin:focus, .container .btn.btn-nonelogin:hover {
+            border-color: #e67420;
+            background: #e67420;
+            color: #fff
+        }
+
+    .container .btn.btn-facebook {
+        background: #3b5998;
+        border: 1px solid #3b5998;
+        color: #fff;
+        margin-top: 20px
+    }
+
+        .container .btn.btn-facebook:focus, .container .btn.btn-facebook:hover {
+            border-color: #2A4B90;
+            background: #2A4B90;
+            color: #fff
+        }
+
+    .container .btn.btn-google {
+        background: #d23e2b;
+        border: 1px solid #d23e2b;
+        color: #fff
+    }
+
+        .container .btn.btn-google:focus, .container .btn.btn-google:hover {
+            border-color: #BD2D1A;
+            background: #BD2D1A;
+            color: #fff
+        }
+
+    .container .btn.btn-yahoo {
+        background: #700F77;
+        border: 1px solid #700F77;
+        color: #fff
+    }
+
+    .container .btn.btn-editinfo, .container .btn.btn-historyinfo {
+        width: auto;
+        margin: 50px 0;
+        padding: 8px 20px;
+        text-transform: none;
+        display: inline-block
+    }
+
+    .container .btn.btn-yahoo:focus, .container .btn.btn-yahoo:hover {
+        border-color: #5E0665;
+        background: #5E0665;
+        color: #fff
+    }
+
+    .container .btn.btn-editinfo {
+        background: #31BD51;
+        border: 1px solid #31BD51;
+        color: #fff
+    }
+
+        .container .btn.btn-editinfo:focus, .container .btn.btn-editinfo:hover {
+            border-color: #2EB94E;
+            background: #2EB94E;
+            color: #fff
+        }
+
+    .container .btn.btn-historyinfo {
+        background: 0 0;
+        border: 1px solid #e4e4e4;
+        color: #444
+    }
+
+.buyfast .ip, .registryfast .ip {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px
+}
+
+.container .btn.btn-historyinfo:focus, .container .btn.btn-historyinfo:hover {
+    border-color: #fff;
+    background: #ccc;
+    color: #000
+}
+
+.buyfast .ip {
+    padding: 11px;
+    border-radius: 2px
+}
+
+.buyfast .fright {
+    padding-left: 20px
+}
+
+.registryfast .ip {
+    padding: 9px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px
+}
+
+    .registryfast .ip.w50 {
+        width: 50%
+    }
+
+.registryfast .fright {
+    padding-left: 20px
+}
+
+.txtinfoUser {
+    font: 15px/20px Segoe UI Semibold
+}
+
+    .txtinfoUser label {
+        font-family: Segoe UI
+    }
+
+.boxabstracts, .bx-abstracts, .recruit {
+    border: solid #e4e4e4;
+    border-width: 0 1px 1px;
+    padding: 15px
+}
+
+.bx-abstracts {
+    min-height: 1807px
+}
+
+.newsevent, .recruit {
+    min-height: 513px
+}
+
+.bxsevent {
+    padding-left: 20px
+}
+
+.pagesDetailNews .newsevent {
+    margin: 0
+}
+
+.newsevent {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+    .newsevent ul {
+        border: none
+    }
+
+        .newsevent ul li {
+            width: 25%;
+            overflow: hidden;
+            padding: 15px;
+            min-height: 470px;
+            float: left
+        }
+
+            .newsevent ul li a {
+                display: block;
+                color: #444
+            }
+
+                .newsevent ul li a .img-box {
+                    height: 200px;
+                    overflow: hidden
+                }
+
+                    .newsevent ul li a .img-box img {
+                        width: 100%
+                    }
+
+                .newsevent ul li a h2 {
+                    font: 17px/21px Segoe Ui;
+                    margin: 10px 0
+                }
+
+                .newsevent ul li a .txtsummary {
+                    font: 14px/19px Segoe Ui;
+                    display: block;
+                    text-align: justify
+                }
+
+                .newsevent ul li a:hover {
+                    color: #222
+                }
+
+                    .newsevent ul li a:hover h2 {
+                        color: #e73b3b
+                    }
+
+            .newsevent ul li:first-child {
+                width: 50%
+            }
+
+                .newsevent ul li:first-child .img-box {
+                    height: 290px
+                }
+
+        .newsevent ul.lstmoreNews {
+            margin-top: 100px
+        }
+
+            .newsevent ul.lstmoreNews .titlelst {
+                text-transform: uppercase;
+                font: 19px/23px Segoe Ui;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #e4e4e4;
+                padding-left: 10px
+            }
+
+            .newsevent ul.lstmoreNews li:first-child {
+                width: 25%
+            }
+
+                .newsevent ul.lstmoreNews li:first-child .img-box {
+                    height: 200px
+                }
+
+.contentnewsevent {
+    font: 14px/20px Arial;
+    text-align: justify;
+    padding: 20px 0 0 20px
+}
+
+    .contentnewsevent .titleload {
+        font: 28px/32px Segoe UI;
+        margin: 0 0 20px
+    }
+
+    .contentnewsevent img {
+        max-width: 100%
+    }
+
+.fastHover button, .fastHover input, .fastHover select, .fastHover textarea, .tblContacts button, .tblContacts input, .tblContacts select, .tblContacts textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px
+}
+
+.error, .fastHover .btn, .tblContacts .btn {
+    padding: 10px
+}
+
+.error {
+    color: #ee5b5b;
+    border: 1px solid #f7aaaa;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    margin-bottom: 10px
+}
+
+.color-red {
+    color: #d00
+}
+
+input.lb-error {
+    border-color: #EA5555 !important;
+    color: #E01F1F !important
+}
+
+.tblHistoryOrder {
+    border: solid #e4e4e4;
+    border-width: 1px 0 0 1px
+}
+
+    .tblHistoryOrder .column {
+        padding: 10px;
+        border: solid #e4e4e4;
+        border-width: 0 1px 1px 0
+    }
+
+.txtsuccess {
+    color: #39AF3D
+}
+
+.txtcancel {
+    color: #E84343
+}
+
+.txtnewOrder {
+    color: #EA9817
+}
+
+.txtconfirmship {
+    color: #25D28B
+}
+
+.notificate404, .notificateSuccess {
+    text-align: center;
+    margin-bottom: 50px
+}
+
+    .notificate404 h2, .notificateSuccess h2 {
+        font: 30px/35px Segoe UI Semibold;
+        color: #39AF3D;
+        text-transform: uppercase;
+        margin: 30px 0 10px
+    }
+
+    .notificate404 h3, .notificateSuccess h3 {
+        font: 18px/20px Segoe UI Semibold;
+        color: #222;
+        margin: 0
+    }
+
+    .notificate404 span, .notificateSuccess span {
+        font: 15px/22px Segoe UI;
+        display: block
+    }
+
+    .notificate404 h2 {
+        font: 130px/150px Segoe UI;
+        color: #FFC12B
+    }
+
+    .notificate404 .backlikHs {
+        border: 1px solid #e4e4e4;
+        padding: 7px 20px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        margin-top: 30px;
+        display: inline-block
+    }
+
+        .notificate404 .backlikHs:focus, .notificate404 .backlikHs:hover {
+            border-color: #ccc
+        }
+
+._4z_9, ._4z_b, ._4z_f, form.async_saving ._4z_8:active ._4z_f, form.async_saving ._4z_9:active {
+    background: 0 0 !important;
+    border: none !important
+}
+
+.abcRioButton {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px
+}
+
+.abcRioButtonRed {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    width: auto !important;
+    height: auto !important
+}
+
+.new-rating.w45 {
+    width: 53%
+}
+
+@media (min-width:1200px) {
+    body .container {
+        width: 90%
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    body .container {
+        width: 98%
+    }
+}
+
+@media (min-width:640px) and (max-width:767px) {
+    body #banner .page-head.fixheader ul li.searchpages, body #banner .topbar ul.nav-left, body .hightsupport-index, body .lstproNew, body .newsevent ul li a .txtsummary {
+        display: none
+    }
+
+    body .container {
+        width: 98%
+    }
+
+    body #banner .page-head {
+        height: auto
+    }
+
+        body #banner .page-head ul li.logo-custom, body #banner .page-head ul li.searchpages {
+            width: 100%
+        }
+
+        body #banner .page-head ul li.CartsBills {
+            width: 50%;
+            position: absolute;
+            right: 70px;
+            top: 0
+        }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform {
+                right: -20px
+            }
+
+        body #banner .page-head ul li .frmSearch {
+            margin: 10px 0 0
+        }
+
+        body #banner .page-head.fixheader {
+            position: fixed;
+            z-index: 999999;
+            top: 0;
+            background: #fff;
+            width: 80%
+        }
+
+            body #banner .page-head.fixheader ul li.CartsBills {
+                right: 10px
+            }
+
+                body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-Bill .lik-bill, body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                    padding: 20px 0 20px 40px
+                }
+
+            body #banner .page-head.fixheader ul li.logo-custom img {
+                height: 38px
+            }
+
+    body .slider-menu .w-menu {
+        position: static;
+        width: 0;
+        height: 0
+    }
+
+    body .slider-menu .w-slide {
+        width: 100%;
+        height: 286px
+    }
+
+        body .slider-menu .w-slide .fast-Nav {
+            overflow: hidden
+        }
+
+            body .slider-menu .w-slide .fast-Nav ul li a {
+                padding: 8px;
+                font: 13px/19px Segoe UI
+            }
+
+    body .w-slide .wp-slide {
+        height: 250px
+    }
+
+        body .w-slide .wp-slide.skippr div {
+            background-position: center center !important
+        }
+
+    body .lstcollection {
+        margin-left: -10px;
+        margin-right: -10px
+    }
+
+        body .lstcollection li {
+            width: 33.3333333%;
+            padding: 10px
+        }
+
+            body .lstcollection li .new-rating span {
+                font-size: 19px
+            }
+
+            body .lstcollection li .old-count del {
+                font-size: 16px
+            }
+
+    
+    body.pages .collection-index .title-subcollection {
+        border-width: 1px
+    }
+
+    body.pages .collection-index .lstcollection {
+        padding: 0
+    }
+
+        body.pages .collection-index .lstcollection li {
+            width: 33.33333333%;
+            padding: 10px
+        }
+
+    body .detail-product .aboutsSp, body .detail-product .thumbnails {
+        width: 100%;
+        padding: 7px 0
+    }
+
+    body .content-ship .shipCod li.w50 {
+        width: 100%
+    }
+
+    body .historyview-index .title-review {
+        width: 20%
+    }
+
+    body .historyview-index ul {
+        width: 80%
+    }
+
+    body .bxsevent {
+        padding: 0
+    }
+
+    body .contentnewsevent {
+        padding: 20px 0 0
+    }
+
+    body .newsevent ul li {
+        padding: 15px;
+        width: 50%;
+        min-height: 300px
+    }
+
+        body .newsevent ul li:first-child {
+            width: 100%
+        }
+
+        body .newsevent ul li a h2 {
+            font: 15px/19px Segoe Ui
+        }
+
+    body .tblHistoryOrder .column {
+        white-space: nowrap;
+        overflow: hidden
+    }
+
+    body .material-menu-button {
+        position: absolute;
+        top: 45px;
+        right: 5px;
+        z-index: 4;
+        display: block;
+        width: 25px;
+        height: 32px;
+        padding: 10px 10px 0;
+        border: 1px solid #eee;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        float: right !important
+    }
+
+        body .material-menu-button:focus, body .material-menu-button:hover {
+            background: #232527;
+            border-color: #232527;
+            cursor: pointer;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s
+        }
+
+            body .material-menu-button:focus span, body .material-menu-button:hover span {
+                background: #fff
+            }
+
+        body .material-menu-button span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+            background: #999
+        }
+
+    body .material-menu-titlebar .material-menu-button {
+        position: static
+    }
+
+    body .slider-menu .w-menu .material-menu-view-mobile {
+        background-color: #fff;
+        -webkit-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        -moz-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        box-shadow: 1px 0 10px 0 rgba(0,0,0,.3)
+    }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li a {
+            line-height: 20px
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu {
+            position: relative;
+            left: 0;
+            top: 0;
+            background: 0 0;
+            height: auto;
+            width: 100%;
+            visibility: visible;
+            border: none
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu li a {
+                padding-left: 35px;
+                border-top: 1px solid #e9e9e9
+            }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li:focus .sub-menu, body .slider-menu .w-menu .material-menu-view-mobile ul li:hover .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none;
+            display: block
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:focus, body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:hover {
+                color: #E73B3B
+            }
+}
+
+@media (min-width:568px) and (max-width:639px) {
+    body #banner .page-head.fixheader ul li.searchpages, body #banner .topbar ul.nav-left, body .hightsupport-index, body .lstproNew, body .newsevent ul li a .txtsummary {
+        display: none
+    }
+
+    body .container {
+        width: 98%
+    }
+
+    body #banner .page-head {
+        height: auto
+    }
+
+        body #banner .page-head ul li.logo-custom, body #banner .page-head ul li.searchpages {
+            width: 100%
+        }
+
+        body #banner .page-head ul li.CartsBills {
+            width: 50%;
+            position: absolute;
+            right: 70px;
+            top: 0
+        }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform {
+                right: -20px
+            }
+
+        body #banner .page-head ul li .frmSearch {
+            margin: 10px 0 0
+        }
+
+        body #banner .page-head.fixheader {
+            position: fixed;
+            z-index: 999999;
+            top: 0;
+            background: #fff;
+            width: 80%
+        }
+
+            body #banner .page-head.fixheader ul li.CartsBills {
+                right: 10px
+            }
+
+                body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-Bill .lik-bill, body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                    padding: 20px 0 20px 40px
+                }
+
+            body #banner .page-head.fixheader ul li.logo-custom img {
+                height: 38px
+            }
+
+    body .slider-menu .w-menu {
+        position: static;
+        width: 0;
+        height: 0
+    }
+
+    body .slider-menu .w-slide {
+        width: 100%;
+        height: 286px
+    }
+
+        body .slider-menu .w-slide .fast-Nav {
+            overflow: hidden
+        }
+
+            body .slider-menu .w-slide .fast-Nav ul li a {
+                padding: 8px;
+                font: 13px/19px Segoe UI
+            }
+
+    body .w-slide .wp-slide {
+        height: 250px
+    }
+
+        body .w-slide .wp-slide.skippr div {
+            background-position: center center !important
+        }
+
+    body .lstcollection {
+        margin-left: -25px;
+        margin-right: -25px
+    }
+
+        body .lstcollection li {
+            width: 50%;
+            padding: 10px 25px
+        }
+
+    body.pages .collection-index .title-subcollection {
+        border-width: 1px
+    }
+
+    body.pages .collection-index .lstcollection {
+        padding: 0
+    }
+
+        body.pages .collection-index .lstcollection li {
+            width: 50%;
+            padding: 10px 25px
+        }
+
+    body .detail-product .aboutsSp, body .detail-product .thumbnails {
+        width: 100%;
+        padding: 7px 0
+    }
+
+    body .content-ship .shipCod li.w50 {
+        width: 100%
+    }
+
+    body .historyview-index .title-review {
+        width: 20%
+    }
+
+    body .historyview-index ul {
+        width: 80%
+    }
+
+    body .bxsevent {
+        padding: 0
+    }
+
+    body .contentnewsevent {
+        padding: 20px 0 0
+    }
+
+    body .newsevent ul li {
+        padding: 15px;
+        width: 50%;
+        min-height: 300px
+    }
+
+        body .newsevent ul li:first-child {
+            width: 100%
+        }
+
+        body .newsevent ul li a h2 {
+            font: 15px/19px Segoe Ui
+        }
+
+    body .tblHistoryOrder .column {
+        white-space: nowrap;
+        overflow: hidden
+    }
+
+    body .material-menu-button {
+        position: absolute;
+        top: 45px;
+        right: 5px;
+        z-index: 4;
+        display: block;
+        width: 25px;
+        height: 32px;
+        padding: 10px 10px 0;
+        border: 1px solid #eee;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        float: right !important
+    }
+
+        body .material-menu-button:focus, body .material-menu-button:hover {
+            background: #232527;
+            border-color: #232527;
+            cursor: pointer;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s
+        }
+
+            body .material-menu-button:focus span, body .material-menu-button:hover span {
+                background: #fff
+            }
+
+        body .material-menu-button span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+            background: #999
+        }
+
+    body .material-menu-titlebar .material-menu-button {
+        position: static
+    }
+
+    body .slider-menu .w-menu .material-menu-view-mobile {
+        background-color: #fff;
+        -webkit-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        -moz-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        box-shadow: 1px 0 10px 0 rgba(0,0,0,.3)
+    }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li a {
+            line-height: 20px
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu {
+            position: relative;
+            left: 0;
+            top: 0;
+            background: 0 0;
+            height: auto;
+            width: 100%;
+            visibility: visible;
+            border: none
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu li a {
+                padding-left: 35px;
+                border-top: 1px solid #e9e9e9
+            }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li:focus .sub-menu, body .slider-menu .w-menu .material-menu-view-mobile ul li:hover .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none;
+            display: block
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:focus, body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:hover {
+                color: #E73B3B
+            }
+}
+
+@media (min-width:421px) and (max-width:567px) {
+    body #banner .page-head.fixheader ul li.searchpages, body #banner .topbar ul.nav-left, body .hightsupport-index, body .lstproNew, body .newsevent ul li a .txtsummary {
+        display: none
+    }
+
+    body .container {
+        width: 98%
+    }
+
+    body #banner .topbar ul.nav-right li a {
+        padding: 0 7px
+    }
+
+    body #banner .page-head {
+        height: auto
+    }
+
+        body #banner .page-head ul li.logo-custom, body #banner .page-head ul li.searchpages {
+            width: 100%
+        }
+
+        body #banner .page-head ul li.CartsBills {
+            width: 50%;
+            position: absolute;
+            right: 70px;
+            top: 0
+        }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                padding: 30px 0 10px 40px;
+                width: 10px;
+                overflow: hidden
+            }
+
+                body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart font {
+                    color: #fff;
+                    position: absolute;
+                    top: 15px;
+                    left: 25px;
+                    background: #F72424;
+                    padding: 1px 5px;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px
+                }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform {
+                right: -70px;
+                width: 395px
+            }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill .lik-bill {
+                padding: 30px 0 10px 40px;
+                width: 10px;
+                overflow: hidden
+            }
+
+        body #banner .page-head ul li .frmSearch {
+            margin: 10px 0 0
+        }
+
+        body #banner .page-head.fixheader {
+            position: fixed;
+            z-index: 999999;
+            top: 0;
+            background: #fff;
+            width: 80%
+        }
+
+            body #banner .page-head.fixheader ul li.CartsBills {
+                right: 10px
+            }
+
+                body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-Bill .lik-bill, body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                    padding-top: 15px
+                }
+
+            body #banner .page-head.fixheader ul li.logo-custom img {
+                height: 38px
+            }
+
+    body .slider-menu .w-menu {
+        position: static;
+        width: 0;
+        height: 0
+    }
+
+    body .slider-menu .w-slide {
+        width: 100%;
+        height: 286px
+    }
+
+        body .slider-menu .w-slide .fast-Nav {
+            overflow: hidden
+        }
+
+            body .slider-menu .w-slide .fast-Nav ul li a {
+                padding: 8px;
+                font: 13px/19px Segoe UI
+            }
+
+    body .w-slide .wp-slide {
+        height: 250px
+    }
+
+        body .w-slide .wp-slide.skippr div {
+            background-position: center center !important
+        }
+
+    body .lstcollection {
+        margin-left: -5px;
+        margin-right: -5px
+    }
+
+        body .lstcollection li {
+            width: 50%;
+            padding: 2%
+        }
+
+            body .lstcollection li .img-thumb {
+                height: 370px
+            }
+
+                body .lstcollection li .img-thumb a.img-thb {
+                    height: 270px
+                }
+
+                body .lstcollection li .img-thumb .intro {
+                    font: 14px/17px Segoe UI;
+                    margin: 5px 0
+                }
+
+                body .lstcollection li .img-thumb .new-rating span {
+                    font: 14px/20px Segoe UI Bold
+                }
+
+                body .lstcollection li .img-thumb .btn-addCarts {
+                    background: #f24343;
+                    font: 14px/17px Segoe UI Semibold;
+                    top: 130px;
+                    width: 90%
+                }
+
+                body .lstcollection li .img-thumb .old-count del {
+                    font: 13px/20px Segoe UI
+                }
+
+                body .lstcollection li .img-thumb:focus .btn-addCarts, body .lstcollection li .img-thumb:hover .btn-addCarts {
+                    left: 5%
+                }
+
+ 
+
+    body.pages .collection-index .title-subcollection {
+        border-width: 1px
+    }
+
+    body.pages .collection-index .lstcollection {
+        padding: 0
+    }
+
+        body.pages .collection-index .lstcollection li {
+            width: 50%;
+            padding: 2%
+        }
+
+    body .detail-product .aboutsSp, body .detail-product .thumbnails {
+        width: 100%;
+        padding: 7px 0
+    }
+
+    body .content-ship .shipCod li.w50 {
+        width: 100%
+    }
+
+    body .content-ship .shipCod li ul li {
+        width: 100%;
+        border: none
+    }
+
+    body .historyview-index .title-review {
+        width: 20%
+    }
+
+    body .historyview-index ul {
+        width: 80%
+    }
+
+    body .bxsevent {
+        padding: 0
+    }
+
+    body .contentnewsevent {
+        padding: 20px 0 0
+    }
+
+    body .newsevent ul li {
+        padding: 15px;
+        width: 50%;
+        min-height: 300px
+    }
+
+        body .newsevent ul li:first-child {
+            width: 100%
+        }
+
+        body .newsevent ul li a h2 {
+            font: 15px/19px Segoe Ui
+        }
+
+    body .tblHistoryOrder .column {
+        white-space: nowrap;
+        overflow: hidden
+    }
+
+    body .material-menu-button {
+        position: absolute;
+        top: 45px;
+        right: 5px;
+        z-index: 4;
+        display: block;
+        width: 25px;
+        height: 32px;
+        padding: 10px 10px 0;
+        border: 1px solid #eee;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        float: right !important
+    }
+
+        body .material-menu-button:focus, body .material-menu-button:hover {
+            background: #232527;
+            border-color: #232527;
+            cursor: pointer;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s
+        }
+
+            body .material-menu-button:focus span, body .material-menu-button:hover span {
+                background: #fff
+            }
+
+        body .material-menu-button span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+            background: #999
+        }
+
+    body .material-menu-titlebar .material-menu-button {
+        position: static
+    }
+
+    body .slider-menu .w-menu .material-menu-view-mobile {
+        background-color: #fff;
+        -webkit-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        -moz-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        box-shadow: 1px 0 10px 0 rgba(0,0,0,.3)
+    }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li a {
+            line-height: 20px
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu {
+            position: relative;
+            left: 0;
+            top: 0;
+            background: 0 0;
+            height: auto;
+            width: 100%;
+            visibility: visible;
+            border: none
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu li a {
+                padding-left: 35px;
+                border-top: 1px solid #e9e9e9
+            }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li:focus .sub-menu, body .slider-menu .w-menu .material-menu-view-mobile ul li:hover .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none;
+            display: block
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:focus, body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:hover {
+                color: #E73B3B
+            }
+}
+
+@media (min-width:360px) and (max-width:420px) {
+    body .container {
+        width: 98%
+    }
+
+    body #banner .page-head ul li.logo-custom, body #banner .page-head ul li.searchpages {
+        width: 100%
+    }
+
+    body #banner .topbar ul.nav-left, body #banner .topbar ul.nav-right li {
+        display: none
+    }
+
+        body #banner .topbar ul.nav-right li a {
+            padding: 0 7px
+        }
+
+        body #banner .topbar ul.nav-right li.login, body #banner .topbar ul.nav-right li.registry {
+            display: inline-block
+        }
+
+    body #banner .page-head.fixheader ul li.searchpages, body .hightsupport-index, body .lstproNew, body .newsevent ul li a .txtsummary, body .w-slide .wp-slide {
+        display: none
+    }
+
+    body #banner .page-head {
+        height: auto
+    }
+
+        body #banner .page-head ul li.logo-custom img {
+            height: 45px
+        }
+
+        body #banner .page-head ul li.CartsBills {
+            width: 50%;
+            position: absolute;
+            right: 70px;
+            top: 0
+        }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                padding: 15px 0 10px 40px;
+                width: 10px;
+                overflow: hidden
+            }
+
+                body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart font {
+                    color: #fff;
+                    position: absolute;
+                    top: 15px;
+                    left: 25px;
+                    background: #F72424;
+                    padding: 1px 5px;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px
+                }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform {
+                right: -70px;
+                width: 320px
+            }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill {
+                margin-right: 5px
+            }
+
+                body #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill .lik-bill {
+                    padding: 15px 0 10px 40px;
+                    width: 10px;
+                    overflow: hidden
+                }
+
+        body #banner .page-head ul li .frmSearch {
+            margin: 10px 0 0
+        }
+
+            body #banner .page-head ul li .frmSearch .search-field {
+                width: 80%
+            }
+
+            body #banner .page-head ul li .frmSearch .search-btn {
+                width: 20%
+            }
+
+        body #banner .page-head.fixheader {
+            position: fixed;
+            z-index: 999999;
+            top: 0;
+            background: #fff;
+            width: 80%
+        }
+
+            body #banner .page-head.fixheader ul li.CartsBills {
+                right: 10px
+            }
+
+                body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-Bill .lik-bill, body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                    padding-top: 15px
+                }
+
+            body #banner .page-head.fixheader ul li.logo-custom img {
+                height: 38px
+            }
+
+    body .slider-menu .w-menu {
+        position: static;
+        width: 0;
+        height: 0
+    }
+
+    body .slider-menu .w-slide {
+        width: 100%;
+        height: auto
+    }
+
+        body .slider-menu .w-slide .fast-Nav {
+            overflow: hidden;
+            display: none
+        }
+
+            body .slider-menu .w-slide .fast-Nav ul li a {
+                padding: 8px;
+                font: 13px/19px Segoe UI
+            }
+
+    body .w-slide .wp-slide {
+        height: 250px
+    }
+
+        body .w-slide .wp-slide.skippr div {
+            background-position: center center !important
+        }
+
+    body .lstcollection {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+        body .lstcollection li {
+            width: 50%;
+            padding: 0 2%
+        }
+
+            body .lstcollection li .img-thumb {
+                height: 330px
+            }
+
+                body .lstcollection li .img-thumb a.img-thb {
+                    height: 220px
+                }
+
+                body .lstcollection li .img-thumb .intro {
+                    font: 14px/17px Segoe UI;
+                    margin: 5px 0
+                }
+
+                body .lstcollection li .img-thumb .new-rating span {
+                    font: 13px/20px Segoe UI Bold
+                }
+
+                body .lstcollection li .img-thumb .btn-addCarts {
+                    background: #f24343;
+                    font: 14px/17px Segoe UI Semibold;
+                    top: 90px;
+                    width: 90%
+                }
+
+                body .lstcollection li .img-thumb .old-count del {
+                    font: 12px/20px Segoe UI
+                }
+
+                body .lstcollection li .img-thumb:focus .btn-addCarts, body .lstcollection li .img-thumb:hover .btn-addCarts {
+                    left: 5%
+                }
+
+
+    body.pages .collection-index .title-subcollection {
+        border-width: 1px
+    }
+
+    body.pages .collection-index .lstcollection {
+        padding: 0
+    }
+
+        body.pages .collection-index .lstcollection li {
+            width: 50%;
+            padding: 0 2%
+        }
+
+    body .detail-product .aboutsSp, body .detail-product .thumbnails {
+        width: 100%;
+        padding: 7px 0
+    }
+
+    body .content-ship {
+        margin-top: 20px
+    }
+
+        body .content-ship .shipCod li ul li, body .content-ship .shipCod li.w50 {
+            width: 100%
+        }
+
+            body .content-ship .shipCod li ul li.login-form {
+                border: none
+            }
+
+    body .historyview-index .title-review {
+        width: 20%
+    }
+
+    body .historyview-index ul {
+        width: 80%
+    }
+
+    body .bxsevent {
+        padding: 0
+    }
+
+    body .contentnewsevent {
+        padding: 20px 0 0
+    }
+
+    body .newsevent ul li {
+        padding: 15px;
+        width: 50%;
+        min-height: 300px
+    }
+
+        body .newsevent ul li:first-child {
+            width: 100%
+        }
+
+        body .newsevent ul li a h2 {
+            font: 15px/19px Segoe Ui
+        }
+
+    body .tblHistoryOrder .column {
+        white-space: nowrap;
+        overflow: hidden
+    }
+
+    body .material-menu-button {
+        position: absolute;
+        top: 40px;
+        right: 5px;
+        z-index: 4;
+        display: block;
+        width: 25px;
+        height: 32px;
+        padding: 10px 10px 0;
+        border: 1px solid #eee;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        float: right !important
+    }
+
+        body .material-menu-button:focus, body .material-menu-button:hover {
+            background: #232527;
+            border-color: #232527;
+            cursor: pointer;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s
+        }
+
+            body .material-menu-button:focus span, body .material-menu-button:hover span {
+                background: #fff
+            }
+
+        body .material-menu-button span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+            background: #999
+        }
+
+    body .material-menu-titlebar .material-menu-button {
+        position: static
+    }
+
+    body .slider-menu .w-menu .material-menu-view-mobile {
+        background-color: #fff;
+        -webkit-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        -moz-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        box-shadow: 1px 0 10px 0 rgba(0,0,0,.3)
+    }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li a {
+            line-height: 20px
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu {
+            position: relative;
+            left: 0;
+            top: 0;
+            background: 0 0;
+            height: auto;
+            width: 100%;
+            visibility: visible;
+            border: none
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu li a {
+                padding-left: 35px;
+                border-top: 1px solid #e9e9e9
+            }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li:focus .sub-menu, body .slider-menu .w-menu .material-menu-view-mobile ul li:hover .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none;
+            display: block
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:focus, body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:hover {
+                color: #E73B3B
+            }
+}
+
+@media (min-width:300px) and (max-width:360px) {
+    body .container {
+        width: 98%
+    }
+
+    body #banner .page-head ul li.logo-custom, body #banner .page-head ul li.searchpages {
+        width: 100%
+    }
+
+    body #banner .topbar ul.nav-left, body #banner .topbar ul.nav-right li {
+        display: none
+    }
+
+        body #banner .topbar ul.nav-right li a {
+            padding: 0 7px
+        }
+
+        body #banner .topbar ul.nav-right li.login, body #banner .topbar ul.nav-right li.registry {
+            display: inline-block
+        }
+
+    body #banner .page-head.fixheader ul li.searchpages, body .hightsupport-index, body .lstproNew, body .newsevent ul li a .txtsummary, body .w-slide .wp-slide {
+        display: none
+    }
+
+    body #banner .page-head {
+        height: auto
+    }
+
+        body #banner .page-head ul li.logo-custom img {
+            height: 35px
+        }
+
+        body #banner .page-head ul li.CartsBills {
+            width: 50%;
+            position: absolute;
+            right: 70px;
+            top: 0
+        }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                padding: 15px 0 10px 40px;
+                width: 10px;
+                overflow: hidden
+            }
+
+                body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart font {
+                    color: #fff;
+                    position: absolute;
+                    top: 15px;
+                    left: 25px;
+                    background: #F72424;
+                    padding: 1px 5px;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px
+                }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform {
+                right: -70px;
+                width: 290px
+            }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill {
+                margin-right: 5px
+            }
+
+                body #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill .lik-bill {
+                    padding: 15px 0 10px 40px;
+                    width: 10px;
+                    overflow: hidden
+                }
+
+        body #banner .page-head ul li .frmSearch {
+            margin: 10px 0 0
+        }
+
+            body #banner .page-head ul li .frmSearch .search-field {
+                width: 80%
+            }
+
+            body #banner .page-head ul li .frmSearch .search-btn {
+                width: 20%
+            }
+
+        body #banner .page-head.fixheader {
+            position: fixed;
+            z-index: 999999;
+            top: 0;
+            background: #fff;
+            width: 80%
+        }
+
+            body #banner .page-head.fixheader ul li.CartsBills {
+                right: 10px
+            }
+
+                body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-Bill .lik-bill, body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                    padding-top: 15px
+                }
+
+            body #banner .page-head.fixheader ul li.logo-custom img {
+                height: 38px
+            }
+
+    body .slider-menu .w-menu {
+        position: static;
+        width: 0;
+        height: 0
+    }
+
+    body .slider-menu .w-slide {
+        width: 100%;
+        height: auto
+    }
+
+        body .slider-menu .w-slide .fast-Nav {
+            overflow: hidden;
+            display: none
+        }
+
+            body .slider-menu .w-slide .fast-Nav ul li a {
+                padding: 8px;
+                font: 13px/19px Segoe UI
+            }
+
+    body .w-slide .wp-slide {
+        height: 250px
+    }
+
+        body .w-slide .wp-slide.skippr div {
+            background-position: center center !important
+        }
+
+    body .lstcollection {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+        body .lstcollection li {
+            width: 50%;
+            padding: 0 2%
+        }
+
+            body .lstcollection li .img-thumb {
+                height: 290px
+            }
+
+                body .lstcollection li .img-thumb a.img-thb {
+                    height: 185px
+                }
+
+                body .lstcollection li .img-thumb .intro {
+                    font: 13px/15px Segoe UI;
+                    margin: 5px 0
+                }
+
+                body .lstcollection li .img-thumb .new-rating span {
+                    font: 12px/20px Segoe UI Bold
+                }
+
+                body .lstcollection li .img-thumb .btn-addCarts {
+                    background: #f24343;
+                    font: 14px/17px Segoe UI Semibold;
+                    top: 70px;
+                    width: 90%
+                }
+
+                body .lstcollection li .img-thumb .old-count del {
+                    font: 12px/20px Segoe UI
+                }
+
+                body .lstcollection li .img-thumb .old-count .rcounter {
+                    font-size: 10px
+                }
+
+                body .lstcollection li .img-thumb:focus .btn-addCarts, body .lstcollection li .img-thumb:hover .btn-addCarts {
+                    left: 5%
+                }
+
+
+    body.pages .collection-index .title-subcollection {
+        border-width: 1px
+    }
+
+    body.pages .collection-index .lstcollection {
+        padding: 0
+    }
+
+        body.pages .collection-index .lstcollection li {
+            width: 50%;
+            padding: 0 2%
+        }
+
+    body .detail-product .aboutsSp, body .detail-product .thumbnails {
+        width: 100%;
+        padding: 7px 0
+    }
+
+    body .content-ship {
+        margin-top: 20px
+    }
+
+        body .content-ship .shipCod li ul li, body .content-ship .shipCod li.w50 {
+            width: 100%
+        }
+
+            body .content-ship .shipCod li ul li.login-form {
+                border: none
+            }
+
+    body .historyview-index .title-review {
+        width: 20%
+    }
+
+    body .historyview-index ul {
+        width: 80%
+    }
+
+    body .bxsevent {
+        padding: 0
+    }
+
+    body .contentnewsevent {
+        padding: 20px 0 0
+    }
+
+    body .newsevent ul li {
+        padding: 15px;
+        width: 50%;
+        min-height: 300px
+    }
+
+        body .newsevent ul li:first-child {
+            width: 100%
+        }
+
+        body .newsevent ul li a h2 {
+            font: 15px/19px Segoe Ui
+        }
+
+    body .tblHistoryOrder .column {
+        white-space: nowrap;
+        overflow: hidden
+    }
+
+    body .material-menu-button {
+        position: absolute;
+        top: 40px;
+        right: 5px;
+        z-index: 4;
+        display: block;
+        width: 25px;
+        height: 32px;
+        padding: 10px 10px 0;
+        border: 1px solid #eee;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        float: right !important
+    }
+
+        body .material-menu-button:focus, body .material-menu-button:hover {
+            background: #232527;
+            border-color: #232527;
+            cursor: pointer;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s
+        }
+
+            body .material-menu-button:focus span, body .material-menu-button:hover span {
+                background: #fff
+            }
+
+        body .material-menu-button span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+            background: #999
+        }
+
+    body .material-menu-titlebar .material-menu-button {
+        position: static
+    }
+
+    body .slider-menu .w-menu .material-menu-view-mobile {
+        background-color: #fff;
+        -webkit-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        -moz-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        box-shadow: 1px 0 10px 0 rgba(0,0,0,.3)
+    }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li a {
+            line-height: 20px
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu {
+            position: relative;
+            left: 0;
+            top: 0;
+            background: 0 0;
+            height: auto;
+            width: 100%;
+            visibility: visible;
+            border: none
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu li a {
+                padding-left: 35px;
+                border-top: 1px solid #e9e9e9
+            }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li:focus .sub-menu, body .slider-menu .w-menu .material-menu-view-mobile ul li:hover .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none;
+            display: block
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:focus, body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:hover {
+                color: #E73B3B
+            }
+}
+
+@media only screen and (max-width:299px) {
+    body .container {
+        width: 98%
+    }
+
+    body #banner .page-head ul li.logo-custom, body #banner .page-head ul li.searchpages {
+        width: 100%
+    }
+
+    body #banner .topbar ul.nav-left, body #banner .topbar ul.nav-right li {
+        display: none
+    }
+
+        body #banner .topbar ul.nav-right li a {
+            padding: 0 7px
+        }
+
+        body #banner .topbar ul.nav-right li.login, body #banner .topbar ul.nav-right li.registry {
+            display: inline-block
+        }
+
+    body #banner .page-head.fixheader ul li.searchpages, body .hightsupport-index, body .lstproNew, body .newsevent ul li a .txtsummary, body .w-slide .wp-slide {
+        display: none
+    }
+
+    body #banner .page-head {
+        height: auto
+    }
+
+        body #banner .page-head ul li.logo-custom img {
+            height: 35px
+        }
+
+        body #banner .page-head ul li.CartsBills {
+            width: 50%;
+            position: absolute;
+            right: 70px;
+            top: 0
+        }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                padding: 15px 0 10px 40px;
+                width: 10px;
+                overflow: hidden
+            }
+
+                body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .lik-cart font {
+                    color: #fff;
+                    position: absolute;
+                    top: 15px;
+                    left: 25px;
+                    background: #F72424;
+                    padding: 1px 5px;
+                    border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px
+                }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-cart .cartform {
+                right: -70px;
+                width: 320px
+            }
+
+            body #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill {
+                margin-right: 5px
+            }
+
+                body #banner .page-head ul li.CartsBills .rightCarts li.bx-Bill .lik-bill {
+                    padding: 15px 0 10px 40px;
+                    width: 10px;
+                    overflow: hidden
+                }
+
+        body #banner .page-head ul li .frmSearch {
+            margin: 10px 0 0
+        }
+
+            body #banner .page-head ul li .frmSearch .search-field {
+                width: 80%
+            }
+
+            body #banner .page-head ul li .frmSearch .search-btn {
+                width: 20%
+            }
+
+        body #banner .page-head.fixheader {
+            position: fixed;
+            z-index: 999999;
+            top: 0;
+            background: #fff;
+            width: 75%
+        }
+
+            body #banner .page-head.fixheader ul li.CartsBills {
+                right: 5px
+            }
+
+                body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-Bill .lik-bill, body #banner .page-head.fixheader ul li.CartsBills .rightCarts li.bx-cart .lik-cart {
+                    padding-top: 15px
+                }
+
+            body #banner .page-head.fixheader ul li.logo-custom img {
+                height: 38px
+            }
+
+    body .slider-menu .w-menu {
+        position: static;
+        width: 0;
+        height: 0
+    }
+
+    body .slider-menu .w-slide {
+        width: 100%;
+        height: auto
+    }
+
+        body .slider-menu .w-slide .fast-Nav {
+            overflow: hidden;
+            display: none
+        }
+
+            body .slider-menu .w-slide .fast-Nav ul li a {
+                padding: 8px;
+                font: 13px/19px Segoe UI
+            }
+
+    body .w-slide .wp-slide {
+        height: 250px
+    }
+
+        body .w-slide .wp-slide.skippr div {
+            background-position: center center !important
+        }
+
+    body .lstcollection {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+        body .lstcollection li {
+            width: 100%;
+            padding: 0 5%
+        }
+
+            body .lstcollection li .img-thumb .new-rating span {
+                font: 19px/25px Segoe UI SemiBold
+            }
+
+            body .lstcollection li .img-thumb .btn-addCarts {
+                background: #f24343
+            }
+
+body.pages .collection-index .title-subcollection {
+        border-width: 1px
+    }
+
+    body.pages .collection-index .lstcollection {
+        padding: 0
+    }
+
+        body.pages .collection-index .lstcollection li {
+            width: 100%;
+            padding: 0 10%
+        }
+
+    body .detail-product .aboutsSp, body .detail-product .thumbnails {
+        width: 100%;
+        padding: 7px 0
+    }
+
+    body .content-ship {
+        margin-top: 20px
+    }
+
+        body .content-ship .shipCod li ul li, body .content-ship .shipCod li.w50 {
+            width: 100%
+        }
+
+            body .content-ship .shipCod li ul li.login-form {
+                border: none
+            }
+
+    body .historyview-index .title-review {
+        width: 20%
+    }
+
+    body .historyview-index ul {
+        width: 80%
+    }
+
+    body .bxsevent {
+        padding: 0
+    }
+
+    body .contentnewsevent {
+        padding: 20px 0 0
+    }
+
+    body .newsevent ul li {
+        padding: 15px;
+        width: 50%;
+        min-height: 300px
+    }
+
+        body .newsevent ul li:first-child {
+            width: 100%
+        }
+
+        body .newsevent ul li a h2 {
+            font: 15px/19px Segoe Ui
+        }
+
+    body .tblHistoryOrder .column {
+        white-space: nowrap;
+        overflow: hidden
+    }
+
+    body .material-menu-button {
+        position: absolute;
+        top: 40px;
+        right: 5px;
+        z-index: 4;
+        display: block;
+        width: 25px;
+        height: 32px;
+        padding: 10px 10px 0;
+        border: 1px solid #eee;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        float: right !important
+    }
+
+        body .material-menu-button:focus, body .material-menu-button:hover {
+            background: #232527;
+            border-color: #232527;
+            cursor: pointer;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s
+        }
+
+            body .material-menu-button:focus span, body .material-menu-button:hover span {
+                background: #fff
+            }
+
+        body .material-menu-button span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+            background: #999
+        }
+
+    body .material-menu-titlebar .material-menu-button {
+        position: static
+    }
+
+    body .slider-menu .w-menu .material-menu-view-mobile {
+        background-color: #fff;
+        -webkit-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        -moz-box-shadow: 1px 0 10px 0 rgba(0,0,0,.3);
+        box-shadow: 1px 0 10px 0 rgba(0,0,0,.3)
+    }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li a {
+            line-height: 20px
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu {
+            position: relative;
+            left: 0;
+            top: 0;
+            background: 0 0;
+            height: auto;
+            width: 100%;
+            visibility: visible;
+            border: none
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li .sub-menu li a {
+                padding-left: 35px;
+                border-top: 1px solid #e9e9e9
+            }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li:focus .sub-menu, body .slider-menu .w-menu .material-menu-view-mobile ul li:hover .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none
+        }
+
+        body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu {
+            visibility: visible;
+            left: 0;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none;
+            display: block
+        }
+
+            body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:focus, body .slider-menu .w-menu .material-menu-view-mobile ul li.current .sub-menu li a:hover {
+                color: #E73B3B
+            }
+}

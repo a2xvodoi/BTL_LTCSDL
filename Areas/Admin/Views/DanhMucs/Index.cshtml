@@ -1,0 +1,53 @@
+﻿@model PagedList.IPagedList<layout.Models.DanhMuc>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Danh mục";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+<div class="card-header">
+    <i class="fas fa-table mr-1"></i>
+    DANH MỤC
+
+    <div class="float-right">
+
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="Dropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sắp xếp theo</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="@Url.Action("Index","DanhMucs", new { order = "descname"})">Tên danh mục giảm</a>
+                    <a class="dropdown-item" href="@Url.Action("Index","DanhMucs", new { order = "ascname"})">Tên danh mục tăng</a>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Thêm mới", "Create", "DanhMucs", new { @class = "btn btn-link", @role = "button" })
+</p>
+<table class="table table-bordered" width="100%" cellspacing="0">
+    <tr>
+        <th>
+            Tên danh mục
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenDM)
+            </td>
+            <td>
+                @Html.ActionLink("Chỉnh sửa", "Edit", new { id = item.MaDM }) |
+
+                @Html.ActionLink("Xóa", "Delete", new { id = item.MaDM })
+            </td>
+        </tr>
+    }
+
+</table>
+Trang @(Model.PageCount<Model.PageNumber? 0:Model.PageNumber)/@Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, order = ViewBag.sort }))

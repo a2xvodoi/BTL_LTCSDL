@@ -1,0 +1,9 @@
+﻿<div id="navigation">
+    <ul>
+        <li><a href="@Url.Action("Hangmv","Home")" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Hangmv" ? "active":"")">Hàng mới về</a></li>
+        <li><a href="@Url.Action("Hanggg","Home")" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Hanggg" ? "active":"")">Hàng giảm giá</a></li>
+        <li><a href="@Url.Action("Hangbc","Home")" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Hangbc" ? "active":"")">Sản phẩm bán chạy</a></li>
+        <li><a href="@Url.Action("HDMH","Home")" class="@(ViewContext.RouteData.Values["Action"].ToString() == "HDMH" ? "active":"")">Hướng dẫn mua hàng</a></li>
+        <li><a href="@Url.Action("BanDo","Home")" class="@(ViewContext.RouteData.Values["Action"].ToString() == "BanDo" ? "active":"")">Bản đồ</a></li>
+    </ul>
+</div>
