@@ -66,6 +66,7 @@ namespace layout.Areas.Admin.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    hang.AnhChup = "";
                     var f = Request.Files["ImageFile"];
                     if (f != null && f.ContentLength > 0)
                     {
