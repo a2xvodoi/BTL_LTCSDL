@@ -1,81 +1,58 @@
-﻿@model layout.Models.CTDonHang
+﻿@model IEnumerable<layout.Models.CTDonHang>
 
-<div>
-    <h4 class="text-center text-danger">Chi tiết đơn hàng: @Html.DisplayFor(model => model.DonHang.MaDH)</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <div class="container-fluid" >
-            <div class="row">
-                <div class="col-lg-6">
-                    <dt>
-                        @Html.DisplayNameFor(model => model.DonHang.NguoiNhan)
-                    </dt>
 
-                    <dd>
-                        @Html.DisplayFor(model => model.DonHang.NguoiNhan)
-                    </dd>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Hang.TenH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hang.AnhChup)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hang.GiaBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hang.KichCo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hang.MauSac)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </th>
 
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Hang.MaH)
-                    </dt>
+        <th></th>
+    </tr>
 
-                    <dd>
-                        @Html.DisplayFor(model => model.Hang.MaH)
-                    </dd>
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Hang.TenH)
-                    </dt>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Hang.TenH)
+    </td>
+    <td>
+        @{ 
+            string ImagePath = "~/wwwroot/IMAGES/" + item.Hang.AnhChup;
+        }
+        <img src="@Url.Content(ImagePath)" alt="Ảnh" class="img-thumbnail" width="100" height="100"/>
+        
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Hang.GiaBan)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Hang.KichCo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Hang.MauSac)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SoLuong)
+    </td>
 
-                    <dd>
-                        @Html.DisplayFor(model => model.Hang.TenH)
-                    </dd>
+    
+</tr>
+    }
 
-                    <dt>
-                        @Html.DisplayNameFor(model => model.SoLuong)
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.SoLuong)
-                    </dd>
-                </div>
-                <div class="col-lg-6">
-                    <dt>
-                        @Html.DisplayNameFor(model => model.DonHang.NgayDatHang)
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.DonHang.NgayDatHang)
-                    </dd>
-
-                    <dt>
-                        @Html.DisplayNameFor(model => model.DonHang.DiaChiNhan)
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.DonHang.DiaChiNhan)
-                    </dd>
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Hang.MauSac)
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.Hang.MauSac)
-                    </dd>
-
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Hang.KichCo)
-                    </dt>
-
-                    <dd>
-                        @Html.DisplayFor(model => model.Hang.KichCo)
-                    </dd>
-                </div>
-            </div>
-        </div>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.MaH, idc = Model.MaDH }) 
-</p>
-
+</table>

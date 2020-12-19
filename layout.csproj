@@ -302,12 +302,8 @@
     <Content Include="Areas\Admin\Views\TaiKhoans\Index.cshtml" />
     <Content Include="Areas\Admin\Views\DonHangs\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\DonHangs\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\CTDonHangs\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\CTDonHangs\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\CTDonHangs\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\CTDonHangs\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\CTDonHangs\Index.cshtml" />
     <Content Include="Areas\Admin\Views\DonHangs\_CTDHDetails.cshtml" />
+    <Content Include="Areas\Admin\Views\DonHangs\_Details.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -332,7 +328,6 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\CTDonHangsController.cs" />
     <Compile Include="Areas\Admin\Controllers\DanhMucsController.cs" />
     <Compile Include="Areas\Admin\Controllers\DonHangsController.cs" />
     <Compile Include="Areas\Admin\Controllers\HangsController.cs" />

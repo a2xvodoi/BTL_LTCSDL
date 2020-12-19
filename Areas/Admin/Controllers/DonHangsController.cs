@@ -19,6 +19,7 @@ namespace layout.Areas.Admin.Controllers
         public ActionResult Index(int? page, string order)
         {
             ViewBag.sort = order;
+            ViewBag.page = page;
             var dh = db.DonHangs.Select(h => h).OrderBy(h => h.MaDH);
             int pageSize = 5;
             int pageNumber = page ?? 1;
@@ -33,21 +34,34 @@ namespace layout.Areas.Admin.Controllers
             return View(dh.ToPagedList(pageNumber, pageSize));
 
         }
-        public PartialViewResult _CTDHDetails(int id)
+        public PartialViewResult _CTDHDetails(int? id)
         {
             if (id == null)
             {
-                var ct = db.CTDonHangs.OrderBy(c => c.DonHang.NgayDatHang);
-                id = ct.FirstOrDefault().DonHang.MaDH;
+                id = db.CTDonHangs.OrderBy(c => c.DonHang.NgayDatHang).Select(c => c.MaDH).FirstOrDefault();
             }
-            List<CTDonHang> cTDonHang = (List<CTDonHang>)db.CTDonHangs.Where(c => c.MaDH.Equals(id)).Select(c => c);
-            if (cTDonHang == null)
+            var cTDonHangs = db.CTDonHangs.Include(c => c.DonHang).Include(c => c.Hang);
+            cTDonHangs = cTDonHangs.Where(c => c.DonHang.MaDH == id);
+            
+            if (cTDonHangs == null)
             {
                 return HttpNotFoundResult();
             }
-            return PartialView(cTDonHang);
+            return PartialView(cTDonHangs);
         }
-
+        public ActionResult _Details(int? id)
+        {
+            if (id == null)
+            {
+                id = db.DonHangs.OrderBy(c => c.NgayDatHang).Select(c => c.MaDH).FirstOrDefault();
+            }
+            DonHang donHang = db.DonHangs.Find(id);
+            if (donHang == null)
+            {
+                return HttpNotFound();
+            }
+            return PartialView(donHang);
+        }
         private PartialViewResult HttpNotFoundResult()
         {
             throw new NotImplementedException();

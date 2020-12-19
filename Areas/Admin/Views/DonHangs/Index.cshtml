@@ -5,7 +5,10 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 @{ 
-    Html.RenderAction("_CTDHDetails");
+    Html.RenderAction("_Details", "DonHangs");
+}
+@{ 
+    Html.RenderAction("_CTDHDetails","DonHangs");
 }
 <link href="~/Content/PagedList.css" rel="stylesheet" />
 <div class="card-header">
@@ -59,7 +62,8 @@
                 @Html.DisplayFor(modelItem => item.DiaChiNhan)
             </td>
             <td>
-                @Html.ActionLink("Xem chi tiết", "Edit", new { id = item.MaDH })
+                @Html.ActionLink("Xem chi tiết", "Index", new { id = item.MaDH, page = ViewBag.page })<br /><hr />
+                @Html.ActionLink("Chỉnh sửa tình trạng", "Edit", new { id = item.MaDH })
 
             </td>
         </tr>
