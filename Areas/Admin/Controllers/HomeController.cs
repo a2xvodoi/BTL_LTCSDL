@@ -36,11 +36,17 @@ namespace layout.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = db.TaiKhoanAds.Where(u => u.tenDangNhapAd.Equals(tenDangNhapAd) && u.MatKhauAd.Equals(matKhauAd));
+                var user = db.TaiKhoans.Where(u => u.tenDangNhap.Equals(tenDangNhapAd) && u.MatKhau.Equals(matKhauAd)).ToList();
+                
                 if (user.Count() !=0)
                 {
-                    Session["tendn"] = user.FirstOrDefault().tenDangNhapAd;
-                    Session["maAd"] = user.FirstOrDefault().MaAd;
+                    if (user.FirstOrDefault().MaGP == 3)
+                    {
+                        ViewBag.roles = "Bạn không có quyền đăng nhập vào  Admin";
+                        return View();
+                    }
+                    Session["tendn"] = user.FirstOrDefault().tenDangNhap;
+                    Session["maAd"] = user.FirstOrDefault().MatKhau;
                     return RedirectToAction("Index");
                 }
                 else

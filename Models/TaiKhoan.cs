@@ -54,5 +54,6 @@
         [StringLength(20)]
         [DisplayName("Trạng thái")]
         public string TrangThai { get; set; }
+        public int? MaGP { get; set; }
     }
 }

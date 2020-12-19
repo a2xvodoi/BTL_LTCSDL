@@ -49,14 +49,17 @@
                                         </form>
                                     </div>
                                 }
-                                <div class="card-footer text-center">
-                                    <div class="small"><a href="@Url.Action("Index", "Home")">Tạo một tài khoản? Đăng ký!</a></div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </main>
+            
+            @if (ViewBag.er != null)
+            {
+                <div class="alert alert-danger text-center"> @ViewBag.er</div>
+            }
         </div>
         <div id="layoutAuthentication_footer">
             <footer class="py-4 bg-light mt-auto">

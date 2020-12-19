@@ -101,6 +101,11 @@ namespace layout.Areas.Admin.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             TaiKhoan taiKhoan = db.TaiKhoans.Find(id);
+            if (taiKhoan.MaGP == 1)
+            {
+                ViewBag.er = "Bạn không có quyền xóa tài khoản admin!";
+                return View(taiKhoan);
+            }
             try
             {
                 db.TaiKhoans.Remove(taiKhoan);

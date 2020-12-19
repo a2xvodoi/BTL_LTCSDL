@@ -77,4 +77,3 @@ C:\Users\vietn\Desktop\layout\bin\PagedList.dll
 C:\Users\vietn\Desktop\layout\bin\PagedList.Mvc.dll
 C:\Users\vietn\Desktop\layout\bin\PagedList.xml
 C:\Users\vietn\Desktop\layout\bin\PagedList.Mvc.xml
-C:\Users\vietn\Desktop\layout\obj\Debug\layout.csprojAssemblyReference.cache

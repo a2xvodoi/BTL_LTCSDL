@@ -85,11 +85,9 @@
                         Đăng nhập bằng:<br />
                         Xin chào, @Session["tendn"]
                     <span class="glyphicon glyphicon-log-out">
-                        @Html.ActionLink("Đăng xuất", "Logout", "Home", htmlAttributes: new
-                        {
-                            @style = "font-size:small;color:aqua"
-                        })
-                                        </span>
+                        
+                        <a href="/Admin/Home/Logout" style = "font-size:small;color:aqua">Đăng xuất</a>
+                    </span>
                     </div>
                     
                 </div>
